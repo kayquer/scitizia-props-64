@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "Se usar estes modelos, cite o repositório assim (opcional: os props estão em domínio público)."
+title: "Scitizia: props 64 bits - 140 props low poly em glTF/GLB"
+type: dataset
+authors:
+  - alias: kayquer
+repository-code: "https://github.com/kayquer/scitizia-props-64"
+url: "https://github.com/kayquer/scitizia-props-64"
+license: CC0-1.0
+abstract: "Coleção de 140 objetos de cenário em baixo polígono, com visual retrô de console de 64 bits (beira de estrada de rali, parque de apoio, concessionária e cidade), em glTF 2.0 binário (.glb), com pedaços pré-fraturados, texturas PNG, prévias e catálogo JSON com massa, resistência e colisores."
+keywords:
+  - low poly
+  - props
+  - rally
+  - racing
+  - 3d models
+  - gltf
+  - glb
+  - game assets
+  - breakable
+  - retro
+  - 64-bit

@@ -1,0 +1,8718 @@
+{
+ "nome": "Scitizia: props 64 bits",
+ "versao": 1,
+ "unidades": "metros; Y para cima; a frente do prop aponta para +Z; origem no chão, no centro",
+ "campos": {
+  "massa": "kg",
+  "resistencia": "impulso (N·s = kg·m/s) que quebra o prop; null = não quebra",
+  "pecas": "quantos pedaços pré-fraturados o .glb traz (nós Peca_00, Peca_01...)",
+  "voa": "leve o bastante para sair voando quando um carro bate",
+  "dimensoes": "largura (X), altura (Y), profundidade (Z) em metros",
+  "colisor": "forma simples para a física (caixa, cilindro ou esfera), no espaço do prop",
+  "pedacos": "centro, meias medidas e massa de cada pedaço, para criar os corpos quando o prop quebra"
+ },
+ "props": [
+  {
+   "id": "cone_transito",
+   "nome": "Cone de trânsito",
+   "categoria": "corrida",
+   "material": "plastico",
+   "massa": 3,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "apoio",
+    "cidade"
+   ],
+   "dimensoes": [
+    0.4,
+    0.7,
+    0.4
+   ],
+   "triangulos": 184,
+   "arquivo": "modelos/cone_transito.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.35,
+     0
+    ],
+    "raio": 0.17,
+    "meiaAltura": 0.35
+   },
+   "pedacos": [],
+   "previa": "previas/cone_transito.jpg",
+   "textura": "texturas/prop_plastico.png"
+  },
+  {
+   "id": "cone_pequeno",
+   "nome": "Cone pequeno",
+   "categoria": "corrida",
+   "material": "plastico",
+   "massa": 1.2,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "apoio"
+   ],
+   "dimensoes": [
+    0.26,
+    0.45,
+    0.26
+   ],
+   "triangulos": 108,
+   "arquivo": "modelos/cone_pequeno.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.225,
+     0
+    ],
+    "raio": 0.11,
+    "meiaAltura": 0.225
+   },
+   "pedacos": [],
+   "previa": "previas/cone_pequeno.jpg",
+   "textura": "texturas/prop_plastico.png"
+  },
+  {
+   "id": "delineador",
+   "nome": "Delineador tubular",
+   "categoria": "corrida",
+   "material": "plastico",
+   "massa": 4,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "cidade"
+   ],
+   "dimensoes": [
+    0.38,
+    1.06,
+    0.4
+   ],
+   "triangulos": 136,
+   "arquivo": "modelos/delineador.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.525,
+     0
+    ],
+    "raio": 0.2,
+    "meiaAltura": 0.525
+   },
+   "pedacos": [],
+   "previa": "previas/delineador.jpg",
+   "textura": "texturas/prop_plastico.png"
+  },
+  {
+   "id": "fardo_feno",
+   "nome": "Fardo de feno pequeno",
+   "categoria": "corrida",
+   "material": "palha",
+   "massa": 22,
+   "quebra": true,
+   "resistencia": 110,
+   "pecas": 3,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "apoio"
+   ],
+   "dimensoes": [
+    0.9,
+    0.42,
+    0.47
+   ],
+   "triangulos": 68,
+   "arquivo": "modelos/fardo_feno.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.2,
+     0
+    ],
+    "meia": [
+     0.45,
+     0.21,
+     0.235
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.27,
+      0.2,
+      0
+     ],
+     "meia": [
+      0.18,
+      0.21,
+      0.235
+     ],
+     "triangulos": 52,
+     "massa": 6.99
+    },
+    {
+     "centro": [
+      0.0138,
+      0.205,
+      0
+     ],
+     "meia": [
+      0.2212,
+      0.205,
+      0.235
+     ],
+     "triangulos": 44,
+     "massa": 8.384
+    },
+    {
+     "centro": [
+      0.2794,
+      0.2,
+      0
+     ],
+     "meia": [
+      0.1706,
+      0.21,
+      0.235
+     ],
+     "triangulos": 52,
+     "massa": 6.625
+    }
+   ],
+   "previa": "previas/fardo_feno.jpg",
+   "textura": "texturas/prop_palha.png"
+  },
+  {
+   "id": "fardo_feno_grande",
+   "nome": "Fardo de feno grande",
+   "categoria": "corrida",
+   "material": "palha",
+   "massa": 380,
+   "quebra": true,
+   "resistencia": 1900,
+   "pecas": 4,
+   "voa": false,
+   "usos": [
+    "corrida"
+   ],
+   "dimensoes": [
+    1.23,
+    0.93,
+    1.8
+   ],
+   "triangulos": 80,
+   "arquivo": "modelos/fardo_feno_grande.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.45,
+     0
+    ],
+    "meia": [
+     0.615,
+     0.465,
+     0.9
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.3169,
+      0.2288,
+      0
+     ],
+     "meia": [
+      0.2981,
+      0.2438,
+      0.9
+     ],
+     "triangulos": 64,
+     "massa": 68.199
+    },
+    {
+     "centro": [
+      -0.2736,
+      0.5907,
+      0
+     ],
+     "meia": [
+      0.3414,
+      0.3243,
+      0.9
+     ],
+     "triangulos": 64,
+     "massa": 103.915
+    },
+    {
+     "centro": [
+      0.2178,
+      0.3102,
+      0
+     ],
+     "meia": [
+      0.3972,
+      0.3252,
+      0.9
+     ],
+     "triangulos": 64,
+     "massa": 121.229
+    },
+    {
+     "centro": [
+      0.258,
+      0.6564,
+      0
+     ],
+     "meia": [
+      0.357,
+      0.2586,
+      0.9
+     ],
+     "triangulos": 64,
+     "massa": 86.657
+    }
+   ],
+   "previa": "previas/fardo_feno_grande.jpg",
+   "textura": "texturas/prop_palha.png"
+  },
+  {
+   "id": "fardo_redondo",
+   "nome": "Rolo de feno",
+   "categoria": "corrida",
+   "material": "palha",
+   "massa": 300,
+   "quebra": true,
+   "resistencia": 1800,
+   "pecas": 4,
+   "voa": false,
+   "usos": [
+    "corrida"
+   ],
+   "dimensoes": [
+    1.2,
+    1.381,
+    1.381
+   ],
+   "triangulos": 96,
+   "arquivo": "modelos/fardo_redondo.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.7,
+     0
+    ],
+    "meia": [
+     0.6,
+     0.6906,
+     0.6906
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.212,
+      0.4104,
+      0
+     ],
+     "meia": [
+      0.388,
+      0.401,
+      0.6906
+     ],
+     "triangulos": 70,
+     "massa": 79.097
+    },
+    {
+     "centro": [
+      -0.2156,
+      1.0208,
+      0
+     ],
+     "meia": [
+      0.3844,
+      0.3698,
+      0.6906
+     ],
+     "triangulos": 68,
+     "massa": 72.277
+    },
+    {
+     "centro": [
+      0.2232,
+      0.341,
+      0
+     ],
+     "meia": [
+      0.3768,
+      0.3317,
+      0.6906
+     ],
+     "triangulos": 66,
+     "massa": 63.542
+    },
+    {
+     "centro": [
+      0.2175,
+      0.9531,
+      0
+     ],
+     "meia": [
+      0.3825,
+      0.4376,
+      0.6906
+     ],
+     "triangulos": 72,
+     "massa": 85.084
+    }
+   ],
+   "previa": "previas/fardo_redondo.jpg",
+   "textura": "texturas/prop_palha.png"
+  },
+  {
+   "id": "fardos_pilha",
+   "nome": "Pilha de fardos",
+   "categoria": "corrida",
+   "material": "palha",
+   "massa": 66,
+   "quebra": true,
+   "resistencia": 165,
+   "pecas": 3,
+   "voa": false,
+   "usos": [
+    "corrida",
+    "apoio"
+   ],
+   "dimensoes": [
+    1.82,
+    0.82,
+    0.47
+   ],
+   "triangulos": 204,
+   "arquivo": "modelos/fardos_pilha.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.4,
+     0
+    ],
+    "meia": [
+     0.91,
+     0.41,
+     0.235
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.46,
+      0.2,
+      0
+     ],
+     "meia": [
+      0.45,
+      0.21,
+      0.235
+     ],
+     "triangulos": 68,
+     "massa": 22
+    },
+    {
+     "centro": [
+      0.46,
+      0.2,
+      0
+     ],
+     "meia": [
+      0.45,
+      0.21,
+      0.235
+     ],
+     "triangulos": 68,
+     "massa": 22
+    },
+    {
+     "centro": [
+      0,
+      0.6,
+      0
+     ],
+     "meia": [
+      0.45,
+      0.21,
+      0.235
+     ],
+     "triangulos": 68,
+     "massa": 22
+    }
+   ],
+   "previa": "previas/fardos_pilha.jpg",
+   "textura": "texturas/prop_palha.png"
+  },
+  {
+   "id": "pneus_pilha_3",
+   "nome": "Pilha de 3 pneus",
+   "categoria": "corrida",
+   "material": "borracha",
+   "massa": 27,
+   "quebra": true,
+   "resistencia": 81,
+   "pecas": 3,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "apoio"
+   ],
+   "dimensoes": [
+    0.618,
+    0.6,
+    0.618
+   ],
+   "triangulos": 432,
+   "arquivo": "modelos/pneus_pilha_3.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.3,
+     0
+    ],
+    "raio": 0.32,
+    "meiaAltura": 0.3
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      0.1,
+      0
+     ],
+     "meia": [
+      0.3091,
+      0.1,
+      0.3091
+     ],
+     "triangulos": 144,
+     "massa": 9
+    },
+    {
+     "centro": [
+      0,
+      0.3,
+      0
+     ],
+     "meia": [
+      0.3091,
+      0.1,
+      0.3091
+     ],
+     "triangulos": 144,
+     "massa": 9
+    },
+    {
+     "centro": [
+      0,
+      0.5,
+      0
+     ],
+     "meia": [
+      0.3091,
+      0.1,
+      0.3091
+     ],
+     "triangulos": 144,
+     "massa": 9
+    }
+   ],
+   "previa": "previas/pneus_pilha_3.jpg",
+   "textura": "texturas/prop_borracha.png"
+  },
+  {
+   "id": "pneus_pilha_5",
+   "nome": "Pilha de 5 pneus pintados",
+   "categoria": "corrida",
+   "material": "borracha",
+   "massa": 45,
+   "quebra": true,
+   "resistencia": 135,
+   "pecas": 5,
+   "voa": false,
+   "usos": [
+    "corrida"
+   ],
+   "dimensoes": [
+    0.618,
+    1,
+    0.618
+   ],
+   "triangulos": 720,
+   "arquivo": "modelos/pneus_pilha_5.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.5,
+     0
+    ],
+    "raio": 0.32,
+    "meiaAltura": 0.5
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      0.1,
+      0
+     ],
+     "meia": [
+      0.3091,
+      0.1,
+      0.3091
+     ],
+     "triangulos": 144,
+     "massa": 9
+    },
+    {
+     "centro": [
+      0,
+      0.3,
+      0
+     ],
+     "meia": [
+      0.3091,
+      0.1,
+      0.3091
+     ],
+     "triangulos": 144,
+     "massa": 9
+    },
+    {
+     "centro": [
+      0,
+      0.5,
+      0
+     ],
+     "meia": [
+      0.3091,
+      0.1,
+      0.3091
+     ],
+     "triangulos": 144,
+     "massa": 9
+    },
+    {
+     "centro": [
+      0,
+      0.7,
+      0
+     ],
+     "meia": [
+      0.3091,
+      0.1,
+      0.3091
+     ],
+     "triangulos": 144,
+     "massa": 9
+    },
+    {
+     "centro": [
+      0,
+      0.9,
+      0
+     ],
+     "meia": [
+      0.3091,
+      0.1,
+      0.3091
+     ],
+     "triangulos": 144,
+     "massa": 9
+    }
+   ],
+   "previa": "previas/pneus_pilha_5.jpg",
+   "textura": "texturas/prop_borracha.png"
+  },
+  {
+   "id": "pneu_velho",
+   "nome": "Pneu velho",
+   "categoria": "corrida",
+   "material": "borracha",
+   "massa": 9,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "apoio",
+    "cidade"
+   ],
+   "dimensoes": [
+    0.618,
+    0.2,
+    0.618
+   ],
+   "triangulos": 144,
+   "arquivo": "modelos/pneu_velho.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.1,
+     0
+    ],
+    "raio": 0.32,
+    "meiaAltura": 0.1
+   },
+   "pedacos": [],
+   "previa": "previas/pneu_velho.jpg",
+   "textura": "texturas/prop_borracha.png"
+  },
+  {
+   "id": "barreira_pneus",
+   "nome": "Barreira de pneus",
+   "categoria": "corrida",
+   "material": "borracha",
+   "massa": 70,
+   "quebra": true,
+   "resistencia": 245,
+   "pecas": 7,
+   "voa": false,
+   "usos": [
+    "corrida"
+   ],
+   "dimensoes": [
+    1.95,
+    1.238,
+    0.24
+   ],
+   "triangulos": 876,
+   "arquivo": "modelos/barreira_pneus.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.63,
+     0
+    ],
+    "meia": [
+     0.975,
+     0.6191,
+     0.12
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.64,
+      0.32,
+      0
+     ],
+     "meia": [
+      0.3091,
+      0.3091,
+      0.11
+     ],
+     "triangulos": 144,
+     "massa": 11.149
+    },
+    {
+     "centro": [
+      -0.64,
+      0.94,
+      0
+     ],
+     "meia": [
+      0.3091,
+      0.3091,
+      0.11
+     ],
+     "triangulos": 144,
+     "massa": 11.149
+    },
+    {
+     "centro": [
+      0,
+      0.32,
+      0
+     ],
+     "meia": [
+      0.3091,
+      0.3091,
+      0.11
+     ],
+     "triangulos": 144,
+     "massa": 11.149
+    },
+    {
+     "centro": [
+      0,
+      0.94,
+      0
+     ],
+     "meia": [
+      0.3091,
+      0.3091,
+      0.11
+     ],
+     "triangulos": 144,
+     "massa": 11.149
+    },
+    {
+     "centro": [
+      0.64,
+      0.32,
+      0
+     ],
+     "meia": [
+      0.3091,
+      0.3091,
+      0.11
+     ],
+     "triangulos": 144,
+     "massa": 11.149
+    },
+    {
+     "centro": [
+      0.64,
+      0.94,
+      0
+     ],
+     "meia": [
+      0.3091,
+      0.3091,
+      0.11
+     ],
+     "triangulos": 144,
+     "massa": 11.149
+    },
+    {
+     "centro": [
+      0,
+      0.62,
+      0
+     ],
+     "meia": [
+      0.975,
+      0.025,
+      0.12
+     ],
+     "triangulos": 12,
+     "massa": 3.103
+    }
+   ],
+   "previa": "previas/barreira_pneus.jpg",
+   "textura": "texturas/prop_borracha.png"
+  },
+  {
+   "id": "estaca_guia",
+   "nome": "Madeira-guia",
+   "categoria": "corrida",
+   "material": "madeira",
+   "massa": 6,
+   "quebra": true,
+   "resistencia": 21,
+   "pecas": 3,
+   "voa": true,
+   "usos": [
+    "corrida"
+   ],
+   "dimensoes": [
+    0.14,
+    1.14,
+    0.14
+   ],
+   "triangulos": 76,
+   "arquivo": "modelos/estaca_guia.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.57,
+     0
+    ],
+    "meia": [
+     0.07,
+     0.57,
+     0.07
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      0.1804,
+      0
+     ],
+     "meia": [
+      0.05,
+      0.1804,
+      0.05
+     ],
+     "triangulos": 36,
+     "massa": 1.365
+    },
+    {
+     "centro": [
+      0,
+      0.5528,
+      0
+     ],
+     "meia": [
+      0.05,
+      0.2158,
+      0.05
+     ],
+     "triangulos": 28,
+     "massa": 1.634
+    },
+    {
+     "centro": [
+      0,
+      0.9377,
+      0
+     ],
+     "meia": [
+      0.07,
+      0.2023,
+      0.07
+     ],
+     "triangulos": 68,
+     "massa": 3.001
+    }
+   ],
+   "previa": "previas/estaca_guia.jpg",
+   "textura": "texturas/prop_madeira.png"
+  },
+  {
+   "id": "estaca_guia_branca",
+   "nome": "Madeira-guia pintada",
+   "categoria": "corrida",
+   "material": "madeira",
+   "massa": 6,
+   "quebra": true,
+   "resistencia": 21,
+   "pecas": 2,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "cidade"
+   ],
+   "dimensoes": [
+    0.104,
+    1,
+    0.111
+   ],
+   "triangulos": 68,
+   "arquivo": "modelos/estaca_guia_branca.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.5,
+     0.0035
+    ],
+    "meia": [
+     0.052,
+     0.5,
+     0.0555
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      0.2672,
+      0
+     ],
+     "meia": [
+      0.05,
+      0.2672,
+      0.05
+     ],
+     "triangulos": 36,
+     "massa": 2.942
+    },
+    {
+     "centro": [
+      0,
+      0.7593,
+      0.0035
+     ],
+     "meia": [
+      0.052,
+      0.2407,
+      0.0555
+     ],
+     "triangulos": 60,
+     "massa": 3.058
+    }
+   ],
+   "previa": "previas/estaca_guia_branca.jpg",
+   "textura": "texturas/prop_madeira.png"
+  },
+  {
+   "id": "estaca_neve",
+   "nome": "Estaca de neve",
+   "categoria": "corrida",
+   "material": "plastico",
+   "massa": 2,
+   "quebra": true,
+   "resistencia": 12,
+   "pecas": 2,
+   "voa": true,
+   "usos": [
+    "corrida"
+   ],
+   "dimensoes": [
+    0.052,
+    2,
+    0.06
+   ],
+   "triangulos": 72,
+   "arquivo": "modelos/estaca_neve.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     1,
+     0
+    ],
+    "raio": 0.04,
+    "meiaAltura": 1
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      0.476,
+      0
+     ],
+     "meia": [
+      0.026,
+      0.476,
+      0.03
+     ],
+     "triangulos": 22,
+     "massa": 0.986
+    },
+    {
+     "centro": [
+      0,
+      1.4668,
+      0
+     ],
+     "meia": [
+      0.0249,
+      0.5332,
+      0.0287
+     ],
+     "triangulos": 102,
+     "massa": 1.014
+    }
+   ],
+   "previa": "previas/estaca_neve.jpg",
+   "textura": "texturas/prop_plastico.png"
+  },
+  {
+   "id": "placa_chevron_esq",
+   "nome": "Placa de curva à esquerda",
+   "categoria": "corrida",
+   "material": "madeira",
+   "massa": 18,
+   "quebra": true,
+   "resistencia": 54,
+   "pecas": 4,
+   "voa": true,
+   "usos": [
+    "corrida"
+   ],
+   "dimensoes": [
+    1.19,
+    1.35,
+    0.122
+   ],
+   "triangulos": 216,
+   "arquivo": "modelos/placa_chevron_esq.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.675,
+     -0.019
+    ],
+    "meia": [
+     0.595,
+     0.675,
+     0.061
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.48,
+      0.675,
+      -0.04
+     ],
+     "meia": [
+      0.04,
+      0.675,
+      0.04
+     ],
+     "triangulos": 44,
+     "massa": 2.875
+    },
+    {
+     "centro": [
+      0.48,
+      0.675,
+      -0.04
+     ],
+     "meia": [
+      0.04,
+      0.675,
+      0.04
+     ],
+     "triangulos": 44,
+     "massa": 2.875
+    },
+    {
+     "centro": [
+      -0.3,
+      1,
+      0.016
+     ],
+     "meia": [
+      0.295,
+      0.3,
+      0.026
+     ],
+     "triangulos": 64,
+     "massa": 6.125
+    },
+    {
+     "centro": [
+      0.3,
+      1,
+      0.016
+     ],
+     "meia": [
+      0.295,
+      0.3,
+      0.026
+     ],
+     "triangulos": 64,
+     "massa": 6.125
+    }
+   ],
+   "previa": "previas/placa_chevron_esq.jpg",
+   "textura": "texturas/prop_madeira.png"
+  },
+  {
+   "id": "placa_chevron_dir",
+   "nome": "Placa de curva à direita",
+   "categoria": "corrida",
+   "material": "madeira",
+   "massa": 18,
+   "quebra": true,
+   "resistencia": 54,
+   "pecas": 4,
+   "voa": true,
+   "usos": [
+    "corrida"
+   ],
+   "dimensoes": [
+    1.19,
+    1.35,
+    0.122
+   ],
+   "triangulos": 216,
+   "arquivo": "modelos/placa_chevron_dir.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.675,
+     -0.019
+    ],
+    "meia": [
+     0.595,
+     0.675,
+     0.061
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.48,
+      0.675,
+      -0.04
+     ],
+     "meia": [
+      0.04,
+      0.675,
+      0.04
+     ],
+     "triangulos": 44,
+     "massa": 2.875
+    },
+    {
+     "centro": [
+      0.48,
+      0.675,
+      -0.04
+     ],
+     "meia": [
+      0.04,
+      0.675,
+      0.04
+     ],
+     "triangulos": 44,
+     "massa": 2.875
+    },
+    {
+     "centro": [
+      -0.3,
+      1,
+      0.016
+     ],
+     "meia": [
+      0.295,
+      0.3,
+      0.026
+     ],
+     "triangulos": 64,
+     "massa": 6.125
+    },
+    {
+     "centro": [
+      0.3,
+      1,
+      0.016
+     ],
+     "meia": [
+      0.295,
+      0.3,
+      0.026
+     ],
+     "triangulos": 64,
+     "massa": 6.125
+    }
+   ],
+   "previa": "previas/placa_chevron_dir.jpg",
+   "textura": "texturas/prop_madeira.png"
+  },
+  {
+   "id": "placa_chevron_tripla",
+   "nome": "Placa larga de curva",
+   "categoria": "corrida",
+   "material": "madeira",
+   "massa": 32,
+   "quebra": true,
+   "resistencia": 96,
+   "pecas": 5,
+   "voa": true,
+   "usos": [
+    "corrida"
+   ],
+   "dimensoes": [
+    2.19,
+    1.35,
+    0.122
+   ],
+   "triangulos": 280,
+   "arquivo": "modelos/placa_chevron_tripla.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.675,
+     -0.019
+    ],
+    "meia": [
+     1.095,
+     0.675,
+     0.061
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.95,
+      0.675,
+      -0.04
+     ],
+     "meia": [
+      0.04,
+      0.675,
+      0.04
+     ],
+     "triangulos": 44,
+     "massa": 2.754
+    },
+    {
+     "centro": [
+      0,
+      0.675,
+      -0.04
+     ],
+     "meia": [
+      0.04,
+      0.675,
+      0.04
+     ],
+     "triangulos": 44,
+     "massa": 2.754
+    },
+    {
+     "centro": [
+      0.95,
+      0.675,
+      -0.04
+     ],
+     "meia": [
+      0.04,
+      0.675,
+      0.04
+     ],
+     "triangulos": 44,
+     "massa": 2.754
+    },
+    {
+     "centro": [
+      -0.55,
+      1,
+      0.016
+     ],
+     "meia": [
+      0.545,
+      0.3,
+      0.026
+     ],
+     "triangulos": 64,
+     "massa": 10.841
+    },
+    {
+     "centro": [
+      0.4467,
+      1,
+      0.016
+     ],
+     "meia": [
+      0.6483,
+      0.3,
+      0.026
+     ],
+     "triangulos": 84,
+     "massa": 12.896
+    }
+   ],
+   "previa": "previas/placa_chevron_tripla.jpg",
+   "textura": "texturas/prop_madeira.png"
+  },
+  {
+   "id": "baliza_km",
+   "nome": "Marco de quilometragem",
+   "categoria": "corrida",
+   "material": "concreto",
+   "massa": 90,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": false,
+   "usos": [
+    "corrida",
+    "cidade"
+   ],
+   "dimensoes": [
+    0.34,
+    0.76,
+    0.18
+   ],
+   "triangulos": 108,
+   "arquivo": "modelos/baliza_km.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.38,
+     0
+    ],
+    "meia": [
+     0.17,
+     0.38,
+     0.09
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/baliza_km.jpg",
+   "textura": "texturas/prop_concreto.png"
+  },
+  {
+   "id": "baliza_km_madeira",
+   "nome": "Marco de madeira",
+   "categoria": "corrida",
+   "material": "madeira",
+   "massa": 12,
+   "quebra": true,
+   "resistencia": 42,
+   "pecas": 2,
+   "voa": true,
+   "usos": [
+    "corrida"
+   ],
+   "dimensoes": [
+    0.34,
+    1.2,
+    0.15
+   ],
+   "triangulos": 100,
+   "arquivo": "modelos/baliza_km_madeira.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.6,
+     0.015
+    ],
+    "meia": [
+     0.17,
+     0.6,
+     0.075
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      0.3133,
+      0
+     ],
+     "meia": [
+      0.06,
+      0.3133,
+      0.06
+     ],
+     "triangulos": 36,
+     "massa": 2.638
+    },
+    {
+     "centro": [
+      0,
+      0.8861,
+      0.015
+     ],
+     "meia": [
+      0.17,
+      0.3139,
+      0.075
+     ],
+     "triangulos": 92,
+     "massa": 9.362
+    }
+   ],
+   "previa": "previas/baliza_km_madeira.jpg",
+   "textura": "texturas/prop_madeira.png"
+  },
+  {
+   "id": "placa_atencao",
+   "nome": "Placa de atenção",
+   "categoria": "corrida",
+   "material": "metal",
+   "massa": 12,
+   "quebra": true,
+   "resistencia": 120,
+   "pecas": 2,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "cidade"
+   ],
+   "dimensoes": [
+    0.8,
+    2.312,
+    0.103
+   ],
+   "triangulos": 64,
+   "arquivo": "modelos/placa_atencao.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     1.1559,
+     -0.0135
+    ],
+    "meia": [
+     0.4,
+     1.1559,
+     0.0515
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      1.05,
+      -0.03
+     ],
+     "meia": [
+      0.0303,
+      1.05,
+      0.035
+     ],
+     "triangulos": 24,
+     "massa": 4.377
+    },
+    {
+     "centro": [
+      0,
+      1.9655,
+      0.024
+     ],
+     "meia": [
+      0.4,
+      0.3464,
+      0.014
+     ],
+     "triangulos": 40,
+     "massa": 7.623
+    }
+   ],
+   "previa": "previas/placa_atencao.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "placa_pulo",
+   "nome": "Placa de salto",
+   "categoria": "corrida",
+   "material": "metal",
+   "massa": 12,
+   "quebra": true,
+   "resistencia": 120,
+   "pecas": 2,
+   "voa": true,
+   "usos": [
+    "corrida"
+   ],
+   "dimensoes": [
+    0.8,
+    2.312,
+    0.105
+   ],
+   "triangulos": 56,
+   "arquivo": "modelos/placa_pulo.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     1.1559,
+     -0.0125
+    ],
+    "meia": [
+     0.4,
+     1.1559,
+     0.0525
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      1.05,
+      -0.03
+     ],
+     "meia": [
+      0.0303,
+      1.05,
+      0.035
+     ],
+     "triangulos": 24,
+     "massa": 4.187
+    },
+    {
+     "centro": [
+      0,
+      1.9655,
+      0.025
+     ],
+     "meia": [
+      0.4,
+      0.3464,
+      0.015
+     ],
+     "triangulos": 32,
+     "massa": 7.813
+    }
+   ],
+   "previa": "previas/placa_pulo.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "placa_curva_perigosa",
+   "nome": "Placa de curva perigosa",
+   "categoria": "corrida",
+   "material": "metal",
+   "massa": 12,
+   "quebra": true,
+   "resistencia": 120,
+   "pecas": 2,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "cidade"
+   ],
+   "dimensoes": [
+    0.72,
+    2.21,
+    0.095
+   ],
+   "triangulos": 68,
+   "arquivo": "modelos/placa_curva_perigosa.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     1.105,
+     -0.0175
+    ],
+    "meia": [
+     0.36,
+     1.105,
+     0.0475
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      1.05,
+      -0.03
+     ],
+     "meia": [
+      0.0303,
+      1.05,
+      0.035
+     ],
+     "triangulos": 24,
+     "massa": 5.547
+    },
+    {
+     "centro": [
+      0,
+      1.85,
+      0.02
+     ],
+     "meia": [
+      0.36,
+      0.36,
+      0.01
+     ],
+     "triangulos": 44,
+     "massa": 6.453
+    }
+   ],
+   "previa": "previas/placa_curva_perigosa.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "cerca_madeira",
+   "nome": "Cerca de madeira rústica",
+   "categoria": "corrida",
+   "material": "madeira",
+   "massa": 40,
+   "quebra": true,
+   "resistencia": 120,
+   "pecas": 5,
+   "voa": true,
+   "usos": [
+    "corrida"
+   ],
+   "dimensoes": [
+    3.004,
+    1.2,
+    0.15
+   ],
+   "triangulos": 232,
+   "arquivo": "modelos/cerca_madeira.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.6,
+     0.015
+    ],
+    "meia": [
+     1.502,
+     0.6,
+     0.075
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -1.45,
+      0.6,
+      0
+     ],
+     "meia": [
+      0.052,
+      0.6,
+      0.06
+     ],
+     "triangulos": 48,
+     "massa": 6.89
+    },
+    {
+     "centro": [
+      0,
+      0.6,
+      0
+     ],
+     "meia": [
+      0.052,
+      0.6,
+      0.06
+     ],
+     "triangulos": 48,
+     "massa": 6.89
+    },
+    {
+     "centro": [
+      1.45,
+      0.6,
+      0
+     ],
+     "meia": [
+      0.052,
+      0.6,
+      0.06
+     ],
+     "triangulos": 48,
+     "massa": 6.89
+    },
+    {
+     "centro": [
+      0,
+      0.435,
+      0.07
+     ],
+     "meia": [
+      1.5006,
+      0.0849,
+      0.02
+     ],
+     "triangulos": 44,
+     "massa": 9.389
+    },
+    {
+     "centro": [
+      0,
+      0.92,
+      0.07
+     ],
+     "meia": [
+      1.5009,
+      0.0899,
+      0.02
+     ],
+     "triangulos": 44,
+     "massa": 9.941
+    }
+   ],
+   "previa": "previas/cerca_madeira.jpg",
+   "textura": "texturas/prop_madeira.png"
+  },
+  {
+   "id": "cerca_branca",
+   "nome": "Cerca de ripas branca",
+   "categoria": "corrida",
+   "material": "madeira",
+   "massa": 22,
+   "quebra": true,
+   "resistencia": 66,
+   "pecas": 7,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "cidade"
+   ],
+   "dimensoes": [
+    2,
+    1.1,
+    0.11
+   ],
+   "triangulos": 240,
+   "arquivo": "modelos/cerca_branca.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.55,
+     -0.015
+    ],
+    "meia": [
+     1,
+     0.55,
+     0.055
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.95,
+      0.55,
+      -0.03
+     ],
+     "meia": [
+      0.04,
+      0.55,
+      0.04
+     ],
+     "triangulos": 44,
+     "massa": 2.755
+    },
+    {
+     "centro": [
+      0.95,
+      0.55,
+      -0.03
+     ],
+     "meia": [
+      0.04,
+      0.55,
+      0.04
+     ],
+     "triangulos": 44,
+     "massa": 2.755
+    },
+    {
+     "centro": [
+      0,
+      0.3,
+      0
+     ],
+     "meia": [
+      1,
+      0.04,
+      0.0125
+     ],
+     "triangulos": 12,
+     "massa": 1.565
+    },
+    {
+     "centro": [
+      0,
+      0.75,
+      0
+     ],
+     "meia": [
+      1,
+      0.04,
+      0.0125
+     ],
+     "triangulos": 12,
+     "massa": 1.565
+    },
+    {
+     "centro": [
+      -0.6,
+      0.55,
+      0.0265
+     ],
+     "meia": [
+      0.285,
+      0.43,
+      0.0135
+     ],
+     "triangulos": 48,
+     "massa": 5.18
+    },
+    {
+     "centro": [
+      0.12,
+      0.55,
+      0.0265
+     ],
+     "meia": [
+      0.285,
+      0.43,
+      0.0135
+     ],
+     "triangulos": 48,
+     "massa": 5.18
+    },
+    {
+     "centro": [
+      0.72,
+      0.55,
+      0.0265
+     ],
+     "meia": [
+      0.165,
+      0.43,
+      0.0135
+     ],
+     "triangulos": 32,
+     "massa": 2.999
+    }
+   ],
+   "previa": "previas/cerca_branca.jpg",
+   "textura": "texturas/prop_madeira.png"
+  },
+  {
+   "id": "cerca_fita",
+   "nome": "Cerca de fita zebrada",
+   "categoria": "corrida",
+   "material": "plastico",
+   "massa": 2,
+   "quebra": true,
+   "resistencia": 5,
+   "pecas": 4,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "apoio",
+    "cidade"
+   ],
+   "dimensoes": [
+    2.054,
+    1.14,
+    0.057
+   ],
+   "triangulos": 200,
+   "arquivo": "modelos/cerca_fita.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     -0.0029,
+     0.57,
+     0
+    ],
+    "meia": [
+     1.0271,
+     0.57,
+     0.0285
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -1.0029,
+      0.57,
+      0
+     ],
+     "meia": [
+      0.0271,
+      0.57,
+      0.0285
+     ],
+     "triangulos": 40,
+     "massa": 0.726
+    },
+    {
+     "centro": [
+      0.9971,
+      0.57,
+      0
+     ],
+     "meia": [
+      0.0271,
+      0.57,
+      0.0285
+     ],
+     "triangulos": 40,
+     "massa": 0.726
+    },
+    {
+     "centro": [
+      -0.475,
+      0.95,
+      0
+     ],
+     "meia": [
+      0.475,
+      0.035,
+      0.01
+     ],
+     "triangulos": 60,
+     "massa": 0.274
+    },
+    {
+     "centro": [
+      0.475,
+      0.95,
+      0
+     ],
+     "meia": [
+      0.475,
+      0.035,
+      0.01
+     ],
+     "triangulos": 60,
+     "massa": 0.274
+    }
+   ],
+   "previa": "previas/cerca_fita.jpg",
+   "textura": "texturas/prop_plastico.png"
+  },
+  {
+   "id": "cerca_tela",
+   "nome": "Cerca de tela plástica",
+   "categoria": "corrida",
+   "material": "plastico",
+   "massa": 4,
+   "quebra": true,
+   "resistencia": 12,
+   "pecas": 2,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "apoio"
+   ],
+   "dimensoes": [
+    2.036,
+    1.2,
+    0.043
+   ],
+   "triangulos": 208,
+   "arquivo": "modelos/cerca_tela.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     -0.0019,
+     0.6,
+     -0.0175
+    ],
+    "meia": [
+     1.0181,
+     0.6,
+     0.0215
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.5564,
+      0.6,
+      -0.0175
+     ],
+     "meia": [
+      0.4636,
+      0.6,
+      0.0215
+     ],
+     "triangulos": 128,
+     "massa": 1.796
+    },
+    {
+     "centro": [
+      0.4472,
+      0.6,
+      -0.0175
+     ],
+     "meia": [
+      0.569,
+      0.6,
+      0.0215
+     ],
+     "triangulos": 140,
+     "massa": 2.204
+    }
+   ],
+   "previa": "previas/cerca_tela.jpg",
+   "textura": "texturas/prop_plastico.png"
+  },
+  {
+   "id": "barreira_plastico",
+   "nome": "Barreira plástica vermelha",
+   "categoria": "corrida",
+   "material": "plastico",
+   "massa": 45,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": false,
+   "usos": [
+    "corrida",
+    "apoio",
+    "cidade"
+   ],
+   "dimensoes": [
+    1.24,
+    0.82,
+    0.5
+   ],
+   "triangulos": 188,
+   "arquivo": "modelos/barreira_plastico.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.41,
+     0
+    ],
+    "meia": [
+     0.62,
+     0.41,
+     0.25
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/barreira_plastico.jpg",
+   "textura": "texturas/prop_plastico.png"
+  },
+  {
+   "id": "barreira_plastico_branca",
+   "nome": "Barreira plástica branca",
+   "categoria": "corrida",
+   "material": "plastico",
+   "massa": 45,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": false,
+   "usos": [
+    "corrida",
+    "apoio",
+    "cidade"
+   ],
+   "dimensoes": [
+    1.24,
+    0.82,
+    0.5
+   ],
+   "triangulos": 188,
+   "arquivo": "modelos/barreira_plastico_branca.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.41,
+     0
+    ],
+    "meia": [
+     0.62,
+     0.41,
+     0.25
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/barreira_plastico_branca.jpg",
+   "textura": "texturas/prop_plastico.png"
+  },
+  {
+   "id": "barreira_concreto",
+   "nome": "Barreira de concreto",
+   "categoria": "corrida",
+   "material": "concreto",
+   "massa": 900,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": false,
+   "usos": [
+    "corrida",
+    "cidade",
+    "apoio"
+   ],
+   "dimensoes": [
+    2,
+    0.8,
+    0.6
+   ],
+   "triangulos": 40,
+   "arquivo": "modelos/barreira_concreto.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.4,
+     0
+    ],
+    "meia": [
+     1,
+     0.4,
+     0.3
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/barreira_concreto.jpg",
+   "textura": "texturas/prop_concreto.png"
+  },
+  {
+   "id": "tambor_metal",
+   "nome": "Tambor de metal azul",
+   "categoria": "corrida",
+   "material": "metal",
+   "massa": 18,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "apoio",
+    "cidade"
+   ],
+   "dimensoes": [
+    0.583,
+    0.892,
+    0.583
+   ],
+   "triangulos": 264,
+   "arquivo": "modelos/tambor_metal.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.44,
+     0
+    ],
+    "raio": 0.3,
+    "meiaAltura": 0.44
+   },
+   "pedacos": [],
+   "previa": "previas/tambor_metal.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "tambor_enferrujado",
+   "nome": "Tambor enferrujado",
+   "categoria": "corrida",
+   "material": "metal",
+   "massa": 18,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "apoio"
+   ],
+   "dimensoes": [
+    0.583,
+    0.892,
+    0.583
+   ],
+   "triangulos": 264,
+   "arquivo": "modelos/tambor_enferrujado.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.44,
+     0
+    ],
+    "raio": 0.3,
+    "meiaAltura": 0.44
+   },
+   "pedacos": [],
+   "previa": "previas/tambor_enferrujado.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "tambor_listrado",
+   "nome": "Tambor de sinalização",
+   "categoria": "corrida",
+   "material": "plastico",
+   "massa": 9,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "cidade"
+   ],
+   "dimensoes": [
+    0.773,
+    1,
+    0.773
+   ],
+   "triangulos": 216,
+   "arquivo": "modelos/tambor_listrado.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.5,
+     0
+    ],
+    "raio": 0.31,
+    "meiaAltura": 0.5
+   },
+   "pedacos": [],
+   "previa": "previas/tambor_listrado.jpg",
+   "textura": "texturas/prop_plastico.png"
+  },
+  {
+   "id": "tambor_plastico",
+   "nome": "Bombona plástica",
+   "categoria": "corrida",
+   "material": "plastico",
+   "massa": 12,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "apoio"
+   ],
+   "dimensoes": [
+    0.56,
+    0.95,
+    0.56
+   ],
+   "triangulos": 144,
+   "arquivo": "modelos/tambor_plastico.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.46,
+     0
+    ],
+    "raio": 0.29,
+    "meiaAltura": 0.46
+   },
+   "pedacos": [],
+   "previa": "previas/tambor_plastico.jpg",
+   "textura": "texturas/prop_plastico.png"
+  },
+  {
+   "id": "caixa_madeira",
+   "nome": "Caixa de madeira",
+   "categoria": "corrida",
+   "material": "madeira",
+   "massa": 14,
+   "quebra": true,
+   "resistencia": 42,
+   "pecas": 6,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "apoio",
+    "cidade"
+   ],
+   "dimensoes": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "triangulos": 720,
+   "arquivo": "modelos/caixa_madeira.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.3,
+     0
+    ],
+    "meia": [
+     0.3,
+     0.3,
+     0.3
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      0.3,
+      0.2725
+     ],
+     "meia": [
+      0.3,
+      0.3,
+      0.0275
+     ],
+     "triangulos": 156,
+     "massa": 3.865
+    },
+    {
+     "centro": [
+      0,
+      0.3,
+      -0.2725
+     ],
+     "meia": [
+      0.3,
+      0.3,
+      0.0275
+     ],
+     "triangulos": 156,
+     "massa": 3.865
+    },
+    {
+     "centro": [
+      -0.2875,
+      0.3,
+      0
+     ],
+     "meia": [
+      0.0125,
+      0.29,
+      0.275
+     ],
+     "triangulos": 132,
+     "massa": 1.557
+    },
+    {
+     "centro": [
+      0.2875,
+      0.3,
+      0
+     ],
+     "meia": [
+      0.0125,
+      0.29,
+      0.275
+     ],
+     "triangulos": 132,
+     "massa": 1.557
+    },
+    {
+     "centro": [
+      0,
+      0.0125,
+      0
+     ],
+     "meia": [
+      0.275,
+      0.0125,
+      0.275
+     ],
+     "triangulos": 12,
+     "massa": 1.476
+    },
+    {
+     "centro": [
+      0,
+      0.5875,
+      0
+     ],
+     "meia": [
+      0.295,
+      0.0125,
+      0.292
+     ],
+     "triangulos": 132,
+     "massa": 1.681
+    }
+   ],
+   "previa": "previas/caixa_madeira.jpg",
+   "textura": "texturas/prop_madeira.png"
+  },
+  {
+   "id": "caixa_madeira_grande",
+   "nome": "Caixote grande de madeira",
+   "categoria": "corrida",
+   "material": "madeira",
+   "massa": 40,
+   "quebra": true,
+   "resistencia": 120,
+   "pecas": 6,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "apoio"
+   ],
+   "dimensoes": [
+    1,
+    0.9,
+    1.015
+   ],
+   "triangulos": 940,
+   "arquivo": "modelos/caixa_madeira_grande.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.45,
+     0.0075
+    ],
+    "meia": [
+     0.5,
+     0.45,
+     0.5075
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      0.45,
+      0.48
+     ],
+     "meia": [
+      0.5,
+      0.45,
+      0.035
+     ],
+     "triangulos": 244,
+     "massa": 12.548
+    },
+    {
+     "centro": [
+      0,
+      0.45,
+      -0.4725
+     ],
+     "meia": [
+      0.5,
+      0.45,
+      0.0275
+     ],
+     "triangulos": 200,
+     "massa": 9.859
+    },
+    {
+     "centro": [
+      -0.4875,
+      0.45,
+      0
+     ],
+     "meia": [
+      0.0125,
+      0.4388,
+      0.475
+     ],
+     "triangulos": 176,
+     "massa": 4.151
+    },
+    {
+     "centro": [
+      0.4875,
+      0.45,
+      0
+     ],
+     "meia": [
+      0.0125,
+      0.4388,
+      0.475
+     ],
+     "triangulos": 176,
+     "massa": 4.151
+    },
+    {
+     "centro": [
+      0,
+      0.0125,
+      0
+     ],
+     "meia": [
+      0.475,
+      0.0125,
+      0.475
+     ],
+     "triangulos": 12,
+     "massa": 4.494
+    },
+    {
+     "centro": [
+      0,
+      0.8875,
+      0
+     ],
+     "meia": [
+      0.495,
+      0.0125,
+      0.4867
+     ],
+     "triangulos": 132,
+     "massa": 4.798
+    }
+   ],
+   "previa": "previas/caixa_madeira_grande.jpg",
+   "textura": "texturas/prop_madeira.png"
+  },
+  {
+   "id": "caixa_papelao",
+   "nome": "Caixa de papelão",
+   "categoria": "corrida",
+   "material": "papelao",
+   "massa": 2,
+   "quebra": true,
+   "resistencia": 5,
+   "pecas": 4,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "apoio",
+    "cidade"
+   ],
+   "dimensoes": [
+    0.5,
+    0.363,
+    0.404
+   ],
+   "triangulos": 68,
+   "arquivo": "modelos/caixa_papelao.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.1815,
+     0.001
+    ],
+    "meia": [
+     0.25,
+     0.1815,
+     0.202
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.1134,
+      0.1263,
+      0
+     ],
+     "meia": [
+      0.1366,
+      0.1263,
+      0.2
+     ],
+     "triangulos": 28,
+     "massa": 0.471
+    },
+    {
+     "centro": [
+      -0.0993,
+      0.2511,
+      0.0015
+     ],
+     "meia": [
+      0.1507,
+      0.1119,
+      0.2015
+     ],
+     "triangulos": 56,
+     "massa": 0.464
+    },
+    {
+     "centro": [
+      0.0807,
+      0.1152,
+      0
+     ],
+     "meia": [
+      0.1693,
+      0.1152,
+      0.2
+     ],
+     "triangulos": 28,
+     "massa": 0.532
+    },
+    {
+     "centro": [
+      0.0954,
+      0.2379,
+      0.001
+     ],
+     "meia": [
+      0.1546,
+      0.1251,
+      0.202
+     ],
+     "triangulos": 48,
+     "massa": 0.533
+    }
+   ],
+   "previa": "previas/caixa_papelao.jpg",
+   "textura": "texturas/prop_papelao.png"
+  },
+  {
+   "id": "caixa_papelao_grande",
+   "nome": "Caixa de papelão grande",
+   "categoria": "corrida",
+   "material": "papelao",
+   "massa": 4,
+   "quebra": true,
+   "resistencia": 10,
+   "pecas": 4,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "apoio",
+    "cidade"
+   ],
+   "dimensoes": [
+    0.8,
+    0.603,
+    0.604
+   ],
+   "triangulos": 68,
+   "arquivo": "modelos/caixa_papelao_grande.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.3015,
+     0.001
+    ],
+    "meia": [
+     0.4,
+     0.3015,
+     0.302
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.1763,
+      0.3015,
+      0.0994
+     ],
+     "meia": [
+      0.2237,
+      0.3015,
+      0.2036
+     ],
+     "triangulos": 56,
+     "massa": 0.994
+    },
+    {
+     "centro": [
+      -0.1612,
+      0.3015,
+      -0.1386
+     ],
+     "meia": [
+      0.2388,
+      0.3015,
+      0.1624
+     ],
+     "triangulos": 44,
+     "massa": 0.847
+    },
+    {
+     "centro": [
+      0.1267,
+      0.3015,
+      0.1484
+     ],
+     "meia": [
+      0.2733,
+      0.3015,
+      0.1546
+     ],
+     "triangulos": 48,
+     "massa": 0.923
+    },
+    {
+     "centro": [
+      0.1413,
+      0.3015,
+      -0.0813
+     ],
+     "meia": [
+      0.2587,
+      0.3015,
+      0.2187
+     ],
+     "triangulos": 36,
+     "massa": 1.236
+    }
+   ],
+   "previa": "previas/caixa_papelao_grande.jpg",
+   "textura": "texturas/prop_papelao.png"
+  },
+  {
+   "id": "caixas_papelao_pilha",
+   "nome": "Pilha de caixas de papelão",
+   "categoria": "corrida",
+   "material": "papelao",
+   "massa": 7,
+   "quebra": true,
+   "resistencia": 10.5,
+   "pecas": 3,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "apoio",
+    "cidade"
+   ],
+   "dimensoes": [
+    1.049,
+    0.723,
+    0.485
+   ],
+   "triangulos": 168,
+   "arquivo": "modelos/caixas_papelao_pilha.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0.0145,
+     0.3615,
+     -0.002
+    ],
+    "meia": [
+     0.5245,
+     0.3615,
+     0.2425
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.26,
+      0.1815,
+      0
+     ],
+     "meia": [
+      0.25,
+      0.1815,
+      0.201
+     ],
+     "triangulos": 56,
+     "massa": 2.078
+    },
+    {
+     "centro": [
+      0.27,
+      0.1815,
+      -0.02
+     ],
+     "meia": [
+      0.2689,
+      0.1815,
+      0.2244
+     ],
+     "triangulos": 56,
+     "massa": 2.496
+    },
+    {
+     "centro": [
+      0,
+      0.5415,
+      0.02
+     ],
+     "meia": [
+      0.266,
+      0.1815,
+      0.2205
+     ],
+     "triangulos": 56,
+     "massa": 2.426
+    }
+   ],
+   "previa": "previas/caixas_papelao_pilha.jpg",
+   "textura": "texturas/prop_papelao.png"
+  },
+  {
+   "id": "palete",
+   "nome": "Palete de madeira",
+   "categoria": "corrida",
+   "material": "madeira",
+   "massa": 22,
+   "quebra": true,
+   "resistencia": 77,
+   "pecas": 6,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "apoio",
+    "cidade"
+   ],
+   "dimensoes": [
+    1.2,
+    0.148,
+    1.22
+   ],
+   "triangulos": 376,
+   "arquivo": "modelos/palete.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.0738,
+     0
+    ],
+    "meia": [
+     0.6,
+     0.0738,
+     0.61
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      0.135,
+      0.4125
+     ],
+     "meia": [
+      0.6,
+      0.0125,
+      0.1975
+     ],
+     "triangulos": 88,
+     "massa": 1.3
+    },
+    {
+     "centro": [
+      0,
+      0.135,
+      -0.1375
+     ],
+     "meia": [
+      0.6,
+      0.0125,
+      0.1975
+     ],
+     "triangulos": 88,
+     "massa": 1.3
+    },
+    {
+     "centro": [
+      0,
+      0.135,
+      -0.55
+     ],
+     "meia": [
+      0.6,
+      0.0125,
+      0.06
+     ],
+     "triangulos": 44,
+     "massa": 0.395
+    },
+    {
+     "centro": [
+      0,
+      0.07,
+      0
+     ],
+     "meia": [
+      0.55,
+      0.05,
+      0.6
+     ],
+     "triangulos": 88,
+     "massa": 14.478
+    },
+    {
+     "centro": [
+      0,
+      0.07,
+      0
+     ],
+     "meia": [
+      0.05,
+      0.05,
+      0.6
+     ],
+     "triangulos": 44,
+     "massa": 1.316
+    },
+    {
+     "centro": [
+      0,
+      0.01,
+      0
+     ],
+     "meia": [
+      0.6,
+      0.01,
+      0.61
+     ],
+     "triangulos": 24,
+     "massa": 3.211
+    }
+   ],
+   "previa": "previas/palete.jpg",
+   "textura": "texturas/prop_madeira.png"
+  },
+  {
+   "id": "paletes_pilha",
+   "nome": "Pilha de paletes",
+   "categoria": "corrida",
+   "material": "madeira",
+   "massa": 88,
+   "quebra": true,
+   "resistencia": 176,
+   "pecas": 4,
+   "voa": false,
+   "usos": [
+    "corrida",
+    "apoio"
+   ],
+   "dimensoes": [
+    1.2,
+    0.577,
+    1.22
+   ],
+   "triangulos": 1408,
+   "arquivo": "modelos/paletes_pilha.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.3087,
+     0
+    ],
+    "meia": [
+     0.6,
+     0.2887,
+     0.61
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      0.0838,
+      0
+     ],
+     "meia": [
+      0.6,
+      0.0638,
+      0.61
+     ],
+     "triangulos": 352,
+     "massa": 22
+    },
+    {
+     "centro": [
+      0,
+      0.2337,
+      0
+     ],
+     "meia": [
+      0.6,
+      0.0637,
+      0.61
+     ],
+     "triangulos": 352,
+     "massa": 22
+    },
+    {
+     "centro": [
+      0,
+      0.3837,
+      0
+     ],
+     "meia": [
+      0.6,
+      0.0637,
+      0.61
+     ],
+     "triangulos": 352,
+     "massa": 22
+    },
+    {
+     "centro": [
+      0,
+      0.5337,
+      0
+     ],
+     "meia": [
+      0.6,
+      0.0637,
+      0.61
+     ],
+     "triangulos": 352,
+     "massa": 22
+    }
+   ],
+   "previa": "previas/paletes_pilha.jpg",
+   "textura": "texturas/prop_madeira.png"
+  },
+  {
+   "id": "arbusto",
+   "nome": "Arbusto",
+   "categoria": "corrida",
+   "material": "vegetal",
+   "massa": 6,
+   "quebra": true,
+   "resistencia": 18,
+   "pecas": 4,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "cidade",
+    "concessionaria"
+   ],
+   "dimensoes": [
+    1.104,
+    0.773,
+    0.861
+   ],
+   "triangulos": 60,
+   "arquivo": "modelos/arbusto.glb",
+   "colisor": {
+    "forma": "esfera",
+    "centro": [
+     0,
+     0.4,
+     0
+    ],
+    "raio": 0.45
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.2526,
+      0.3494,
+      0.2007
+     ],
+     "meia": [
+      0.2755,
+      0.3458,
+      0.1883
+     ],
+     "triangulos": 60,
+     "massa": 1.112
+    },
+    {
+     "centro": [
+      -0.2515,
+      0.3668,
+      -0.1166
+     ],
+     "meia": [
+      0.2764,
+      0.3713,
+      0.2345
+     ],
+     "triangulos": 64,
+     "massa": 1.493
+    },
+    {
+     "centro": [
+      0.2234,
+      0.366,
+      0.2089
+     ],
+     "meia": [
+      0.281,
+      0.36,
+      0.2291
+     ],
+     "triangulos": 52,
+     "massa": 1.438
+    },
+    {
+     "centro": [
+      0.2611,
+      0.3878,
+      -0.1597
+     ],
+     "meia": [
+      0.3146,
+      0.3811,
+      0.2632
+     ],
+     "triangulos": 68,
+     "massa": 1.957
+    }
+   ],
+   "previa": "previas/arbusto.jpg",
+   "textura": "texturas/prop_vegetal.png"
+  },
+  {
+   "id": "arbusto_florido",
+   "nome": "Arbusto florido",
+   "categoria": "corrida",
+   "material": "vegetal",
+   "massa": 6,
+   "quebra": true,
+   "resistencia": 18,
+   "pecas": 4,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "cidade",
+    "concessionaria"
+   ],
+   "dimensoes": [
+    0.972,
+    0.891,
+    0.921
+   ],
+   "triangulos": 200,
+   "arquivo": "modelos/arbusto_florido.glb",
+   "colisor": {
+    "forma": "esfera",
+    "centro": [
+     0,
+     0.4,
+     0
+    ],
+    "raio": 0.45
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.148,
+      0.3736,
+      0.2037
+     ],
+     "meia": [
+      0.3183,
+      0.4107,
+      0.2901
+     ],
+     "triangulos": 88,
+     "massa": 1.844
+    },
+    {
+     "centro": [
+      -0.1558,
+      0.4083,
+      -0.1882
+     ],
+     "meia": [
+      0.2484,
+      0.3956,
+      0.2394
+     ],
+     "triangulos": 72,
+     "massa": 1.144
+    },
+    {
+     "centro": [
+      0.1999,
+      0.3331,
+      0.1789
+     ],
+     "meia": [
+      0.2696,
+      0.4206,
+      0.2662
+     ],
+     "triangulos": 68,
+     "massa": 1.468
+    },
+    {
+     "centro": [
+      0.1889,
+      0.3731,
+      -0.176
+     ],
+     "meia": [
+      0.3164,
+      0.4,
+      0.251
+     ],
+     "triangulos": 132,
+     "massa": 1.545
+    }
+   ],
+   "previa": "previas/arbusto_florido.jpg",
+   "textura": "texturas/prop_vegetal.png"
+  },
+  {
+   "id": "arbusto_seco",
+   "nome": "Arbusto seco",
+   "categoria": "corrida",
+   "material": "vegetal",
+   "massa": 3,
+   "quebra": true,
+   "resistencia": 9,
+   "pecas": 4,
+   "voa": true,
+   "usos": [
+    "corrida"
+   ],
+   "dimensoes": [
+    0.877,
+    0.618,
+    0.891
+   ],
+   "triangulos": 132,
+   "arquivo": "modelos/arbusto_seco.glb",
+   "colisor": {
+    "forma": "esfera",
+    "centro": [
+     0,
+     0.35,
+     0
+    ],
+    "raio": 0.4
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.1634,
+      0.2841,
+      0.2218
+     ],
+     "meia": [
+      0.253,
+      0.2956,
+      0.2246
+     ],
+     "triangulos": 84,
+     "massa": 0.846
+    },
+    {
+     "centro": [
+      -0.1649,
+      0.2813,
+      -0.1976
+     ],
+     "meia": [
+      0.2537,
+      0.2976,
+      0.2474
+     ],
+     "triangulos": 142,
+     "massa": 0.941
+    },
+    {
+     "centro": [
+      0.2125,
+      0.3264,
+      0.1523
+     ],
+     "meia": [
+      0.2462,
+      0.2753,
+      0.209
+     ],
+     "triangulos": 60,
+     "massa": 0.713
+    },
+    {
+     "centro": [
+      0.1493,
+      0.325,
+      -0.1976
+     ],
+     "meia": [
+      0.1842,
+      0.2744,
+      0.1967
+     ],
+     "triangulos": 46,
+     "massa": 0.501
+    }
+   ],
+   "previa": "previas/arbusto_seco.jpg",
+   "textura": "texturas/prop_vegetal.png"
+  },
+  {
+   "id": "arvoreta_folhosa",
+   "nome": "Arvoreta folhosa",
+   "categoria": "corrida",
+   "material": "vegetal",
+   "massa": 35,
+   "quebra": true,
+   "resistencia": 77,
+   "pecas": 4,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "cidade",
+    "concessionaria"
+   ],
+   "dimensoes": [
+    1.355,
+    2.605,
+    1.25
+   ],
+   "triangulos": 108,
+   "arquivo": "modelos/arvoreta_folhosa.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     1.3,
+     0
+    ],
+    "raio": 0.09,
+    "meiaAltura": 1.3
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      0.45,
+      0
+     ],
+     "meia": [
+      0.0606,
+      0.45,
+      0.07
+     ],
+     "triangulos": 24,
+     "massa": 0.174
+    },
+    {
+     "centro": [
+      0.0379,
+      1.7518,
+      -0.0025
+     ],
+     "meia": [
+      0.561,
+      0.8535,
+      0.5801
+     ],
+     "triangulos": 44,
+     "massa": 25.306
+    },
+    {
+     "centro": [
+      0.3532,
+      1.7717,
+      -0.214
+     ],
+     "meia": [
+      0.3431,
+      0.3245,
+      0.3798
+     ],
+     "triangulos": 20,
+     "massa": 3.852
+    },
+    {
+     "centro": [
+      -0.2976,
+      1.796,
+      0.2363
+     ],
+     "meia": [
+      0.3612,
+      0.4103,
+      0.4198
+     ],
+     "triangulos": 20,
+     "massa": 5.668
+    }
+   ],
+   "previa": "previas/arvoreta_folhosa.jpg",
+   "textura": "texturas/prop_vegetal.png"
+  },
+  {
+   "id": "arvoreta_pinheiro",
+   "nome": "Arvoreta pinheiro",
+   "categoria": "corrida",
+   "material": "vegetal",
+   "massa": 40,
+   "quebra": true,
+   "resistencia": 88,
+   "pecas": 4,
+   "voa": true,
+   "usos": [
+    "corrida"
+   ],
+   "dimensoes": [
+    1.426,
+    2.7,
+    1.462
+   ],
+   "triangulos": 132,
+   "arquivo": "modelos/arvoreta_pinheiro.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     1.4,
+     0
+    ],
+    "raio": 0.09,
+    "meiaAltura": 1.4
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      0.3,
+      0
+     ],
+     "meia": [
+      0.065,
+      0.3,
+      0.075
+     ],
+     "triangulos": 24,
+     "massa": 0.089
+    },
+    {
+     "centro": [
+      -0.0371,
+      1.35,
+      0
+     ],
+     "meia": [
+      0.7129,
+      0.85,
+      0.7312
+     ],
+     "triangulos": 52,
+     "massa": 27.048
+    },
+    {
+     "centro": [
+      -0.0287,
+      1.6,
+      0
+     ],
+     "meia": [
+      0.5513,
+      0.45,
+      0.5655
+     ],
+     "triangulos": 28,
+     "massa": 8.564
+    },
+    {
+     "centro": [
+      -0.0198,
+      2.225,
+      0
+     ],
+     "meia": [
+      0.3802,
+      0.475,
+      0.39
+     ],
+     "triangulos": 28,
+     "massa": 4.299
+    }
+   ],
+   "previa": "previas/arvoreta_pinheiro.jpg",
+   "textura": "texturas/prop_vegetal.png"
+  },
+  {
+   "id": "arvoreta_seca",
+   "nome": "Arvoreta seca",
+   "categoria": "corrida",
+   "material": "vegetal",
+   "massa": 18,
+   "quebra": true,
+   "resistencia": 36,
+   "pecas": 4,
+   "voa": true,
+   "usos": [
+    "corrida"
+   ],
+   "dimensoes": [
+    1.157,
+    2.419,
+    1.215
+   ],
+   "triangulos": 108,
+   "arquivo": "modelos/arvoreta_seca.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     1.2,
+     0
+    ],
+    "raio": 0.07,
+    "meiaAltura": 1.2
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      0.6,
+      0
+     ],
+     "meia": [
+      0.052,
+      0.6,
+      0.06
+     ],
+     "triangulos": 24,
+     "massa": 0.135
+    },
+    {
+     "centro": [
+      0.0457,
+      1.7498,
+      -0.025
+     ],
+     "meia": [
+      0.0906,
+      0.5543,
+      0.0678
+     ],
+     "triangulos": 20,
+     "massa": 0.245
+    },
+    {
+     "centro": [
+      0.1032,
+      1.6264,
+      0.1606
+     ],
+     "meia": [
+      0.5786,
+      0.5449,
+      0.3867
+     ],
+     "triangulos": 32,
+     "massa": 8.774
+    },
+    {
+     "centro": [
+      -0.0416,
+      1.8991,
+      0.0249
+     ],
+     "meia": [
+      0.3888,
+      0.5203,
+      0.6076
+     ],
+     "triangulos": 32,
+     "massa": 8.847
+    }
+   ],
+   "previa": "previas/arvoreta_seca.jpg",
+   "textura": "texturas/prop_vegetal.png"
+  },
+  {
+   "id": "muda_estacada",
+   "nome": "Muda com estaca",
+   "categoria": "corrida",
+   "material": "vegetal",
+   "massa": 5,
+   "quebra": true,
+   "resistencia": 10,
+   "pecas": 2,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "cidade",
+    "concessionaria"
+   ],
+   "dimensoes": [
+    0.524,
+    1.637,
+    0.554
+   ],
+   "triangulos": 68,
+   "arquivo": "modelos/muda_estacada.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.8,
+     0
+    ],
+    "raio": 0.05,
+    "meiaAltura": 0.8
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0.035,
+      0.75,
+      0
+     ],
+     "meia": [
+      0.045,
+      0.75,
+      0.025
+     ],
+     "triangulos": 24,
+     "massa": 0.07
+    },
+    {
+     "centro": [
+      0.0011,
+      0.8186,
+      0.0019
+     ],
+     "meia": [
+      0.2619,
+      0.8186,
+      0.2769
+     ],
+     "triangulos": 44,
+     "massa": 4.93
+    }
+   ],
+   "previa": "previas/muda_estacada.jpg",
+   "textura": "texturas/prop_vegetal.png"
+  },
+  {
+   "id": "palmeira_pequena",
+   "nome": "Palmeira pequena",
+   "categoria": "corrida",
+   "material": "vegetal",
+   "massa": 30,
+   "quebra": true,
+   "resistencia": 66,
+   "pecas": 5,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "cidade",
+    "concessionaria"
+   ],
+   "dimensoes": [
+    1.711,
+    2.097,
+    1.755
+   ],
+   "triangulos": 124,
+   "arquivo": "modelos/palmeira_pequena.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     1.2,
+     0
+    ],
+    "raio": 0.1,
+    "meiaAltura": 1.2
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0.0115,
+      0.5,
+      0
+     ],
+     "meia": [
+      0.0895,
+      0.5,
+      0.09
+     ],
+     "triangulos": 48,
+     "massa": 0.601
+    },
+    {
+     "centro": [
+      0.0715,
+      1.5,
+      0
+     ],
+     "meia": [
+      0.0756,
+      0.5,
+      0.074
+     ],
+     "triangulos": 48,
+     "massa": 0.418
+    },
+    {
+     "centro": [
+      0.1646,
+      1.8884,
+      0.1566
+     ],
+     "meia": [
+      0.8554,
+      0.2084,
+      0.5471
+     ],
+     "triangulos": 12,
+     "massa": 14.566
+    },
+    {
+     "centro": [
+      -0.0049,
+      1.8884,
+      -0.1566
+     ],
+     "meia": [
+      0.686,
+      0.2084,
+      0.5471
+     ],
+     "triangulos": 8,
+     "massa": 11.681
+    },
+    {
+     "centro": [
+      0.0199,
+      1.8884,
+      0
+     ],
+     "meia": [
+      0.1001,
+      0.2084,
+      0.8774
+     ],
+     "triangulos": 8,
+     "massa": 2.735
+    }
+   ],
+   "previa": "previas/palmeira_pequena.jpg",
+   "textura": "texturas/prop_vegetal.png"
+  },
+  {
+   "id": "cacto",
+   "nome": "Cacto",
+   "categoria": "corrida",
+   "material": "vegetal",
+   "massa": 40,
+   "quebra": true,
+   "resistencia": 100,
+   "pecas": 3,
+   "voa": true,
+   "usos": [
+    "corrida"
+   ],
+   "dimensoes": [
+    0.742,
+    1.6,
+    0.277
+   ],
+   "triangulos": 188,
+   "arquivo": "modelos/cacto.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.8,
+     0
+    ],
+    "raio": 0.15,
+    "meiaAltura": 0.8
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      0.8,
+      0
+     ],
+     "meia": [
+      0.1386,
+      0.8,
+      0.1386
+     ],
+     "triangulos": 48,
+     "massa": 27.515
+    },
+    {
+     "centro": [
+      0.2287,
+      0.895,
+      0
+     ],
+     "meia": [
+      0.1634,
+      0.355,
+      0.078
+     ],
+     "triangulos": 70,
+     "massa": 8.101
+    },
+    {
+     "centro": [
+      -0.2149,
+      1.0545,
+      0
+     ],
+     "meia": [
+      0.1351,
+      0.2655,
+      0.0682
+     ],
+     "triangulos": 70,
+     "massa": 4.385
+    }
+   ],
+   "previa": "previas/cacto.jpg",
+   "textura": "texturas/prop_vegetal.png"
+  },
+  {
+   "id": "tora_pequena",
+   "nome": "Tora pequena",
+   "categoria": "corrida",
+   "material": "madeira",
+   "massa": 110,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": false,
+   "usos": [
+    "corrida"
+   ],
+   "dimensoes": [
+    2.02,
+    0.314,
+    0.314
+   ],
+   "triangulos": 80,
+   "arquivo": "modelos/tora_pequena.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.17,
+     0
+    ],
+    "meia": [
+     1.01,
+     0.1571,
+     0.1571
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/tora_pequena.jpg",
+   "textura": "texturas/prop_madeira.png"
+  },
+  {
+   "id": "tora_grande",
+   "nome": "Tora grande",
+   "categoria": "corrida",
+   "material": "madeira",
+   "massa": 600,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": false,
+   "usos": [
+    "corrida"
+   ],
+   "dimensoes": [
+    4.02,
+    0.766,
+    0.617
+   ],
+   "triangulos": 100,
+   "arquivo": "modelos/tora_grande.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.4056,
+     0.0312
+    ],
+    "meia": [
+     2.01,
+     0.3828,
+     0.3084
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/tora_grande.jpg",
+   "textura": "texturas/prop_madeira.png"
+  },
+  {
+   "id": "toras_pilha",
+   "nome": "Pilha de toras",
+   "categoria": "corrida",
+   "material": "madeira",
+   "massa": 1200,
+   "quebra": true,
+   "resistencia": 4800,
+   "pecas": 6,
+   "voa": false,
+   "usos": [
+    "corrida"
+   ],
+   "dimensoes": [
+    3.02,
+    1.124,
+    1.58
+   ],
+   "triangulos": 528,
+   "arquivo": "modelos/toras_pilha.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.562,
+     0
+    ],
+    "meia": [
+     1.51,
+     0.562,
+     0.79
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      0.4,
+      0
+     ],
+     "meia": [
+      1.51,
+      0.4,
+      0.79
+     ],
+     "triangulos": 104,
+     "massa": 484.559
+    },
+    {
+     "centro": [
+      0,
+      0.21,
+      0
+     ],
+     "meia": [
+      1.51,
+      0.194,
+      0.194
+     ],
+     "triangulos": 80,
+     "massa": 57.72
+    },
+    {
+     "centro": [
+      0,
+      0.4,
+      0
+     ],
+     "meia": [
+      1.51,
+      0.4,
+      0.79
+     ],
+     "triangulos": 104,
+     "massa": 484.559
+    },
+    {
+     "centro": [
+      0,
+      0.57,
+      0.21
+     ],
+     "meia": [
+      1.51,
+      0.194,
+      0.194
+     ],
+     "triangulos": 80,
+     "massa": 57.72
+    },
+    {
+     "centro": [
+      0,
+      0.57,
+      -0.21
+     ],
+     "meia": [
+      1.51,
+      0.194,
+      0.194
+     ],
+     "triangulos": 80,
+     "massa": 57.72
+    },
+    {
+     "centro": [
+      0,
+      0.93,
+      0
+     ],
+     "meia": [
+      1.51,
+      0.194,
+      0.194
+     ],
+     "triangulos": 80,
+     "massa": 57.72
+    }
+   ],
+   "previa": "previas/toras_pilha.jpg",
+   "textura": "texturas/prop_madeira.png"
+  },
+  {
+   "id": "toco",
+   "nome": "Toco de árvore",
+   "categoria": "corrida",
+   "material": "madeira",
+   "massa": 220,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": false,
+   "usos": [
+    "corrida"
+   ],
+   "dimensoes": [
+    1.067,
+    0.519,
+    1.069
+   ],
+   "triangulos": 160,
+   "arquivo": "modelos/toco.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.25,
+     0
+    ],
+    "raio": 0.32,
+    "meiaAltura": 0.25
+   },
+   "pedacos": [],
+   "previa": "previas/toco.jpg",
+   "textura": "texturas/prop_madeira.png"
+  },
+  {
+   "id": "pedra_pequena",
+   "nome": "Pedra pequena",
+   "categoria": "corrida",
+   "material": "pedra",
+   "massa": 45,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": false,
+   "usos": [
+    "corrida",
+    "cidade"
+   ],
+   "dimensoes": [
+    0.597,
+    0.431,
+    0.488
+   ],
+   "triangulos": 20,
+   "arquivo": "modelos/pedra_pequena.glb",
+   "colisor": {
+    "forma": "esfera",
+    "centro": [
+     0,
+     0.17,
+     0
+    ],
+    "raio": 0.28
+   },
+   "pedacos": [],
+   "previa": "previas/pedra_pequena.jpg",
+   "textura": "texturas/prop_pedra.png"
+  },
+  {
+   "id": "pedra_media",
+   "nome": "Pedra média",
+   "categoria": "corrida",
+   "material": "pedra",
+   "massa": 320,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": false,
+   "usos": [
+    "corrida"
+   ],
+   "dimensoes": [
+    1.218,
+    0.823,
+    1.154
+   ],
+   "triangulos": 40,
+   "arquivo": "modelos/pedra_media.glb",
+   "colisor": {
+    "forma": "esfera",
+    "centro": [
+     0,
+     0.3,
+     0
+    ],
+    "raio": 0.55
+   },
+   "pedacos": [],
+   "previa": "previas/pedra_media.jpg",
+   "textura": "texturas/prop_pedra.png"
+  },
+  {
+   "id": "pedra_achatada",
+   "nome": "Laje de pedra",
+   "categoria": "corrida",
+   "material": "pedra",
+   "massa": 500,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": false,
+   "usos": [
+    "corrida",
+    "concessionaria"
+   ],
+   "dimensoes": [
+    1.94,
+    0.457,
+    1.457
+   ],
+   "triangulos": 20,
+   "arquivo": "modelos/pedra_achatada.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0.0349,
+     0.2043,
+     -0.0081
+    ],
+    "meia": [
+     0.9699,
+     0.2285,
+     0.7284
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/pedra_achatada.jpg",
+   "textura": "texturas/prop_pedra.png"
+  },
+  {
+   "id": "pedras_monte",
+   "nome": "Monte de pedras",
+   "categoria": "corrida",
+   "material": "pedra",
+   "massa": 80,
+   "quebra": true,
+   "resistencia": 160,
+   "pecas": 4,
+   "voa": false,
+   "usos": [
+    "corrida"
+   ],
+   "dimensoes": [
+    0.905,
+    0.638,
+    0.658
+   ],
+   "triangulos": 80,
+   "arquivo": "modelos/pedras_monte.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0.0039,
+     0.2743,
+     0.0656
+    ],
+    "meia": [
+     0.4527,
+     0.3192,
+     0.3289
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.2378,
+      0.1376,
+      0.0086
+     ],
+     "meia": [
+      0.2111,
+      0.1742,
+      0.2316
+     ],
+     "triangulos": 20,
+     "massa": 22.061
+    },
+    {
+     "centro": [
+      0.2159,
+      0.1469,
+      -0.0626
+     ],
+     "meia": [
+      0.2407,
+      0.1919,
+      0.2006
+     ],
+     "triangulos": 20,
+     "massa": 24.008
+    },
+    {
+     "centro": [
+      -0.0114,
+      0.1346,
+      0.2139
+     ],
+     "meia": [
+      0.2009,
+      0.171,
+      0.1806
+     ],
+     "triangulos": 20,
+     "massa": 16.08
+    },
+    {
+     "centro": [
+      0.0046,
+      0.4272,
+      0.0056
+     ],
+     "meia": [
+      0.228,
+      0.1663,
+      0.1817
+     ],
+     "triangulos": 20,
+     "massa": 17.852
+    }
+   ],
+   "previa": "previas/pedras_monte.jpg",
+   "textura": "texturas/prop_pedra.png"
+  },
+  {
+   "id": "latao_leite",
+   "nome": "Latão de leite",
+   "categoria": "corrida",
+   "material": "metal",
+   "massa": 9,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "apoio"
+   ],
+   "dimensoes": [
+    0.342,
+    0.69,
+    0.36
+   ],
+   "triangulos": 164,
+   "arquivo": "modelos/latao_leite.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.35,
+     0
+    ],
+    "raio": 0.18,
+    "meiaAltura": 0.35
+   },
+   "pedacos": [],
+   "previa": "previas/latao_leite.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "bandeira_marcacao",
+   "nome": "Bandeira de marcação",
+   "categoria": "corrida",
+   "material": "plastico",
+   "massa": 1.2,
+   "quebra": true,
+   "resistencia": 3.6,
+   "pecas": 2,
+   "voa": true,
+   "usos": [
+    "corrida"
+   ],
+   "dimensoes": [
+    0.512,
+    1.45,
+    0.023
+   ],
+   "triangulos": 28,
+   "arquivo": "modelos/bandeira_marcacao.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.7,
+     0
+    ],
+    "raio": 0.05,
+    "meiaAltura": 0.7
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.0011,
+      0.725,
+      0
+     ],
+     "meia": [
+      0.0109,
+      0.725,
+      0.0114
+     ],
+     "triangulos": 20,
+     "massa": 0.249
+    },
+    {
+     "centro": [
+      0.255,
+      1.28,
+      0
+     ],
+     "meia": [
+      0.245,
+      0.14,
+      0.01
+     ],
+     "triangulos": 8,
+     "massa": 0.951
+    }
+   ],
+   "previa": "previas/bandeira_marcacao.jpg",
+   "textura": "texturas/prop_plastico.png"
+  },
+  {
+   "id": "bandeira_xadrez",
+   "nome": "Bandeira quadriculada",
+   "categoria": "corrida",
+   "material": "tecido",
+   "massa": 1.5,
+   "quebra": true,
+   "resistencia": 4.5,
+   "pecas": 2,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "apoio"
+   ],
+   "dimensoes": [
+    0.495,
+    1.8,
+    0.029
+   ],
+   "triangulos": 164,
+   "arquivo": "modelos/bandeira_xadrez.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.9,
+     0
+    ],
+    "raio": 0.05,
+    "meiaAltura": 0.9
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.0014,
+      0.9,
+      0
+     ],
+     "meia": [
+      0.0136,
+      0.9,
+      0.0143
+     ],
+     "triangulos": 20,
+     "massa": 0.431
+    },
+    {
+     "centro": [
+      0.24,
+      1.52,
+      0
+     ],
+     "meia": [
+      0.24,
+      0.18,
+      0.01
+     ],
+     "triangulos": 144,
+     "massa": 1.069
+    }
+   ],
+   "previa": "previas/bandeira_xadrez.jpg",
+   "textura": "texturas/prop_tecido.png"
+  },
+  {
+   "id": "bandeirolas",
+   "nome": "Fileira de bandeirolas",
+   "categoria": "corrida",
+   "material": "tecido",
+   "massa": 3,
+   "quebra": true,
+   "resistencia": 7.5,
+   "pecas": 5,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "apoio",
+    "cidade"
+   ],
+   "dimensoes": [
+    3.236,
+    2,
+    0.038
+   ],
+   "triangulos": 116,
+   "arquivo": "modelos/bandeirolas.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     -0.0019,
+     1,
+     0
+    ],
+    "meia": [
+     1.6181,
+     1,
+     0.019
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -1.6019,
+      1,
+      0
+     ],
+     "meia": [
+      0.0181,
+      1,
+      0.019
+     ],
+     "triangulos": 20,
+     "massa": 0.172
+    },
+    {
+     "centro": [
+      1.5981,
+      1,
+      0
+     ],
+     "meia": [
+      0.0181,
+      1,
+      0.019
+     ],
+     "triangulos": 20,
+     "massa": 0.172
+    },
+    {
+     "centro": [
+      0,
+      1.7352,
+      0
+     ],
+     "meia": [
+      1.6,
+      0.2398,
+      0.01
+     ],
+     "triangulos": 36,
+     "massa": 1.923
+    },
+    {
+     "centro": [
+      0.2,
+      1.6341,
+      0
+     ],
+     "meia": [
+      0.53,
+      0.1612,
+      0.01
+     ],
+     "triangulos": 24,
+     "massa": 0.428
+    },
+    {
+     "centro": [
+      1.2,
+      1.7241,
+      0
+     ],
+     "meia": [
+      0.33,
+      0.1837,
+      0.01
+     ],
+     "triangulos": 16,
+     "massa": 0.304
+    }
+   ],
+   "previa": "previas/bandeirolas.jpg",
+   "textura": "texturas/prop_tecido.png"
+  },
+  {
+   "id": "placa_contagem_3",
+   "nome": "Placa de contagem (3 faixas)",
+   "categoria": "corrida",
+   "material": "madeira",
+   "massa": 9,
+   "quebra": true,
+   "resistencia": 27,
+   "pecas": 2,
+   "voa": true,
+   "usos": [
+    "corrida"
+   ],
+   "dimensoes": [
+    0.5,
+    1.5,
+    0.122
+   ],
+   "triangulos": 124,
+   "arquivo": "modelos/placa_contagem_3.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.75,
+     -0.009
+    ],
+    "meia": [
+     0.25,
+     0.75,
+     0.061
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      0.75,
+      -0.03
+     ],
+     "meia": [
+      0.04,
+      0.75,
+      0.04
+     ],
+     "triangulos": 44,
+     "massa": 3.831
+    },
+    {
+     "centro": [
+      0,
+      1.1,
+      0.0335
+     ],
+     "meia": [
+      0.25,
+      0.35,
+      0.0185
+     ],
+     "triangulos": 80,
+     "massa": 5.169
+    }
+   ],
+   "previa": "previas/placa_contagem_3.jpg",
+   "textura": "texturas/prop_madeira.png"
+  },
+  {
+   "id": "placa_contagem_2",
+   "nome": "Placa de contagem (2 faixas)",
+   "categoria": "corrida",
+   "material": "madeira",
+   "massa": 9,
+   "quebra": true,
+   "resistencia": 27,
+   "pecas": 2,
+   "voa": true,
+   "usos": [
+    "corrida"
+   ],
+   "dimensoes": [
+    0.5,
+    1.5,
+    0.122
+   ],
+   "triangulos": 112,
+   "arquivo": "modelos/placa_contagem_2.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.75,
+     -0.009
+    ],
+    "meia": [
+     0.25,
+     0.75,
+     0.061
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      0.75,
+      -0.03
+     ],
+     "meia": [
+      0.04,
+      0.75,
+      0.04
+     ],
+     "triangulos": 44,
+     "massa": 3.831
+    },
+    {
+     "centro": [
+      0,
+      1.1,
+      0.0335
+     ],
+     "meia": [
+      0.25,
+      0.35,
+      0.0185
+     ],
+     "triangulos": 68,
+     "massa": 5.169
+    }
+   ],
+   "previa": "previas/placa_contagem_2.jpg",
+   "textura": "texturas/prop_madeira.png"
+  },
+  {
+   "id": "placa_contagem_1",
+   "nome": "Placa de contagem (1 faixa)",
+   "categoria": "corrida",
+   "material": "madeira",
+   "massa": 9,
+   "quebra": true,
+   "resistencia": 27,
+   "pecas": 2,
+   "voa": true,
+   "usos": [
+    "corrida"
+   ],
+   "dimensoes": [
+    0.5,
+    1.5,
+    0.122
+   ],
+   "triangulos": 100,
+   "arquivo": "modelos/placa_contagem_1.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.75,
+     -0.009
+    ],
+    "meia": [
+     0.25,
+     0.75,
+     0.061
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      0.75,
+      -0.03
+     ],
+     "meia": [
+      0.04,
+      0.75,
+      0.04
+     ],
+     "triangulos": 44,
+     "massa": 3.831
+    },
+    {
+     "centro": [
+      0,
+      1.1,
+      0.0335
+     ],
+     "meia": [
+      0.25,
+      0.35,
+      0.0185
+     ],
+     "triangulos": 56,
+     "massa": 5.169
+    }
+   ],
+   "previa": "previas/placa_contagem_1.jpg",
+   "textura": "texturas/prop_madeira.png"
+  },
+  {
+   "id": "espantalho",
+   "nome": "Espantalho",
+   "categoria": "corrida",
+   "material": "tecido",
+   "massa": 12,
+   "quebra": true,
+   "resistencia": 30,
+   "pecas": 3,
+   "voa": true,
+   "usos": [
+    "corrida"
+   ],
+   "dimensoes": [
+    1.3,
+    1.84,
+    0.52
+   ],
+   "triangulos": 204,
+   "arquivo": "modelos/espantalho.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.95,
+     0
+    ],
+    "raio": 0.2,
+    "meiaAltura": 0.95
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      0.9,
+      0
+     ],
+     "meia": [
+      0.03,
+      0.9,
+      0.03
+     ],
+     "triangulos": 12,
+     "massa": 0.318
+    },
+    {
+     "centro": [
+      0,
+      1.18,
+      0
+     ],
+     "meia": [
+      0.65,
+      0.25,
+      0.11
+     ],
+     "triangulos": 100,
+     "massa": 7.015
+    },
+    {
+     "centro": [
+      0,
+      1.655,
+      0
+     ],
+     "meia": [
+      0.2473,
+      0.185,
+      0.26
+     ],
+     "triangulos": 92,
+     "massa": 4.667
+    }
+   ],
+   "previa": "previas/espantalho.jpg",
+   "textura": "texturas/prop_tecido.png"
+  },
+  {
+   "id": "carrinho_de_mao",
+   "nome": "Carrinho de mão",
+   "categoria": "corrida",
+   "material": "metal",
+   "massa": 18,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "apoio",
+    "cidade"
+   ],
+   "dimensoes": [
+    0.545,
+    0.554,
+    1.892
+   ],
+   "triangulos": 256,
+   "arquivo": "modelos/carrinho_de_mao.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     -0.0024,
+     0.2729,
+     -0.046
+    ],
+    "meia": [
+     0.2726,
+     0.2771,
+     0.946
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/carrinho_de_mao.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "cavalete_listrado",
+   "nome": "Cavalete listrado",
+   "categoria": "corrida",
+   "material": "madeira",
+   "massa": 10,
+   "quebra": true,
+   "resistencia": 30,
+   "pecas": 3,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "cidade",
+    "apoio"
+   ],
+   "dimensoes": [
+    1.4,
+    1.056,
+    0.633
+   ],
+   "triangulos": 172,
+   "arquivo": "modelos/cavalete_listrado.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.5221,
+     0
+    ],
+    "meia": [
+     0.7,
+     0.5279,
+     0.3167
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      0.95,
+      0
+     ],
+     "meia": [
+      0.7,
+      0.1,
+      0.015
+     ],
+     "triangulos": 84,
+     "massa": 1.568
+    },
+    {
+     "centro": [
+      -0.6,
+      0.44,
+      0
+     ],
+     "meia": [
+      0.02,
+      0.4457,
+      0.3167
+     ],
+     "triangulos": 44,
+     "massa": 4.216
+    },
+    {
+     "centro": [
+      0.6,
+      0.44,
+      0
+     ],
+     "meia": [
+      0.02,
+      0.4457,
+      0.3167
+     ],
+     "triangulos": 44,
+     "massa": 4.216
+    }
+   ],
+   "previa": "previas/cavalete_listrado.jpg",
+   "textura": "texturas/prop_madeira.png"
+  },
+  {
+   "id": "cavalete_obra",
+   "nome": "Cavalete de obra",
+   "categoria": "corrida",
+   "material": "plastico",
+   "massa": 7,
+   "quebra": true,
+   "resistencia": 21,
+   "pecas": 4,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "cidade"
+   ],
+   "dimensoes": [
+    1.2,
+    1,
+    0.5
+   ],
+   "triangulos": 192,
+   "arquivo": "modelos/cavalete_obra.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.5,
+     0
+    ],
+    "meia": [
+     0.6,
+     0.5,
+     0.25
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      0.55,
+      0
+     ],
+     "meia": [
+      0.6,
+      0.09,
+      0.015
+     ],
+     "triangulos": 72,
+     "massa": 0.488
+    },
+    {
+     "centro": [
+      0,
+      0.9,
+      0
+     ],
+     "meia": [
+      0.6,
+      0.09,
+      0.015
+     ],
+     "triangulos": 72,
+     "massa": 0.488
+    },
+    {
+     "centro": [
+      -0.55,
+      0.5,
+      0
+     ],
+     "meia": [
+      0.04,
+      0.5,
+      0.25
+     ],
+     "triangulos": 24,
+     "massa": 3.012
+    },
+    {
+     "centro": [
+      0.55,
+      0.5,
+      0
+     ],
+     "meia": [
+      0.04,
+      0.5,
+      0.25
+     ],
+     "triangulos": 24,
+     "massa": 3.012
+    }
+   ],
+   "previa": "previas/cavalete_obra.jpg",
+   "textura": "texturas/prop_plastico.png"
+  },
+  {
+   "id": "saco_areia",
+   "nome": "Saco de areia",
+   "categoria": "corrida",
+   "material": "tecido",
+   "massa": 25,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "apoio"
+   ],
+   "dimensoes": [
+    0.63,
+    0.16,
+    0.35
+   ],
+   "triangulos": 88,
+   "arquivo": "modelos/saco_areia.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0.015,
+     0.08,
+     0
+    ],
+    "meia": [
+     0.315,
+     0.08,
+     0.175
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/saco_areia.jpg",
+   "textura": "texturas/prop_tecido.png"
+  },
+  {
+   "id": "sacos_areia_pilha",
+   "nome": "Muro de sacos de areia",
+   "categoria": "corrida",
+   "material": "tecido",
+   "massa": 150,
+   "quebra": true,
+   "resistencia": 300,
+   "pecas": 6,
+   "voa": false,
+   "usos": [
+    "corrida",
+    "apoio"
+   ],
+   "dimensoes": [
+    1.84,
+    0.46,
+    0.35
+   ],
+   "triangulos": 264,
+   "arquivo": "modelos/sacos_areia_pilha.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.23,
+     0
+    ],
+    "meia": [
+     0.92,
+     0.23,
+     0.175
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.62,
+      0.08,
+      0
+     ],
+     "meia": [
+      0.3,
+      0.08,
+      0.175
+     ],
+     "triangulos": 44,
+     "massa": 25
+    },
+    {
+     "centro": [
+      0,
+      0.08,
+      0
+     ],
+     "meia": [
+      0.3,
+      0.08,
+      0.175
+     ],
+     "triangulos": 44,
+     "massa": 25
+    },
+    {
+     "centro": [
+      0.62,
+      0.08,
+      0
+     ],
+     "meia": [
+      0.3,
+      0.08,
+      0.175
+     ],
+     "triangulos": 44,
+     "massa": 25
+    },
+    {
+     "centro": [
+      -0.31,
+      0.23,
+      0
+     ],
+     "meia": [
+      0.3,
+      0.08,
+      0.175
+     ],
+     "triangulos": 44,
+     "massa": 25
+    },
+    {
+     "centro": [
+      0.31,
+      0.23,
+      0
+     ],
+     "meia": [
+      0.3,
+      0.08,
+      0.175
+     ],
+     "triangulos": 44,
+     "massa": 25
+    },
+    {
+     "centro": [
+      0,
+      0.38,
+      0
+     ],
+     "meia": [
+      0.3,
+      0.08,
+      0.175
+     ],
+     "triangulos": 44,
+     "massa": 25
+    }
+   ],
+   "previa": "previas/sacos_areia_pilha.jpg",
+   "textura": "texturas/prop_tecido.png"
+  },
+  {
+   "id": "torre_iluminacao",
+   "nome": "Torre de iluminação",
+   "categoria": "corrida",
+   "material": "metal",
+   "massa": 450,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": false,
+   "usos": [
+    "corrida",
+    "apoio"
+   ],
+   "dimensoes": [
+    1.6,
+    4.57,
+    1.12
+   ],
+   "triangulos": 728,
+   "arquivo": "modelos/torre_iluminacao.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     2.285,
+     0
+    ],
+    "meia": [
+     0.8,
+     2.285,
+     0.56
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/torre_iluminacao.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "totem_cronometro",
+   "nome": "Totem de cronometragem",
+   "categoria": "corrida",
+   "material": "metal",
+   "massa": 18,
+   "quebra": true,
+   "resistencia": 108,
+   "pecas": 2,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "apoio"
+   ],
+   "dimensoes": [
+    0.6,
+    1.8,
+    0.407
+   ],
+   "triangulos": 160,
+   "arquivo": "modelos/totem_cronometro.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.9,
+     0
+    ],
+    "meia": [
+     0.3,
+     0.9,
+     0.2033
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      0.675,
+      0
+     ],
+     "meia": [
+      0.2033,
+      0.675,
+      0.2033
+     ],
+     "triangulos": 56,
+     "massa": 14.337
+    },
+    {
+     "centro": [
+      0,
+      1.55,
+      0.005
+     ],
+     "meia": [
+      0.3,
+      0.25,
+      0.095
+     ],
+     "triangulos": 104,
+     "massa": 3.663
+    }
+   ],
+   "previa": "previas/totem_cronometro.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "placa_ponto_controle",
+   "nome": "Placa de posto de controle",
+   "categoria": "corrida",
+   "material": "madeira",
+   "massa": 14,
+   "quebra": true,
+   "resistencia": 42,
+   "pecas": 3,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "apoio"
+   ],
+   "dimensoes": [
+    1,
+    1.65,
+    0.118
+   ],
+   "triangulos": 140,
+   "arquivo": "modelos/placa_ponto_controle.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.825,
+     -0.006
+    ],
+    "meia": [
+     0.5,
+     0.825,
+     0.059
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.4,
+      0.8,
+      -0.03
+     ],
+     "meia": [
+      0.035,
+      0.8,
+      0.035
+     ],
+     "triangulos": 12,
+     "massa": 2.174
+    },
+    {
+     "centro": [
+      0.4,
+      0.8,
+      -0.03
+     ],
+     "meia": [
+      0.035,
+      0.8,
+      0.035
+     ],
+     "triangulos": 12,
+     "massa": 2.174
+    },
+    {
+     "centro": [
+      0,
+      1.35,
+      0.024
+     ],
+     "meia": [
+      0.5,
+      0.3,
+      0.029
+     ],
+     "triangulos": 116,
+     "massa": 9.651
+    }
+   ],
+   "previa": "previas/placa_ponto_controle.jpg",
+   "textura": "texturas/prop_madeira.png"
+  },
+  {
+   "id": "caixa_ferramentas",
+   "nome": "Caixa de ferramentas",
+   "categoria": "apoio",
+   "material": "metal",
+   "massa": 12,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "apoio",
+    "corrida"
+   ],
+   "dimensoes": [
+    0.55,
+    0.373,
+    0.256
+   ],
+   "triangulos": 136,
+   "arquivo": "modelos/caixa_ferramentas.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.1863,
+     0.003
+    ],
+    "meia": [
+     0.275,
+     0.1863,
+     0.128
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/caixa_ferramentas.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "carrinho_ferramentas",
+   "nome": "Carrinho de ferramentas",
+   "categoria": "apoio",
+   "material": "metal",
+   "massa": 70,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": false,
+   "usos": [
+    "apoio"
+   ],
+   "dimensoes": [
+    0.825,
+    1.045,
+    0.482
+   ],
+   "triangulos": 372,
+   "arquivo": "modelos/carrinho_ferramentas.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     -0.0225,
+     0.4673,
+     0.001
+    ],
+    "meia": [
+     0.4125,
+     0.5227,
+     0.241
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/carrinho_ferramentas.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "macaco_hidraulico",
+   "nome": "Macaco hidráulico",
+   "categoria": "apoio",
+   "material": "metal",
+   "massa": 32,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "apoio"
+   ],
+   "dimensoes": [
+    0.32,
+    0.832,
+    1.642
+   ],
+   "triangulos": 256,
+   "arquivo": "modelos/macaco_hidraulico.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0.01,
+     0.4292,
+     -0.3363
+    ],
+    "meia": [
+     0.16,
+     0.4162,
+     0.8209
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/macaco_hidraulico.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "cavalete_mecanico",
+   "nome": "Cavalete de mecânico",
+   "categoria": "apoio",
+   "material": "metal",
+   "massa": 6,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "apoio"
+   ],
+   "dimensoes": [
+    0.32,
+    0.582,
+    0.367
+   ],
+   "triangulos": 84,
+   "arquivo": "modelos/cavalete_mecanico.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.275,
+     0
+    ],
+    "raio": 0.18,
+    "meiaAltura": 0.275
+   },
+   "pedacos": [],
+   "previa": "previas/cavalete_mecanico.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "compressor",
+   "nome": "Compressor de ar",
+   "categoria": "apoio",
+   "material": "metal",
+   "massa": 45,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": false,
+   "usos": [
+    "apoio",
+    "cidade"
+   ],
+   "dimensoes": [
+    0.712,
+    0.66,
+    0.39
+   ],
+   "triangulos": 376,
+   "arquivo": "modelos/compressor.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     -0.0038,
+     0.33,
+     0
+    ],
+    "meia": [
+     0.3561,
+     0.33,
+     0.195
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/compressor.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "gerador",
+   "nome": "Gerador portátil",
+   "categoria": "apoio",
+   "material": "metal",
+   "massa": 85,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": false,
+   "usos": [
+    "apoio",
+    "corrida"
+   ],
+   "dimensoes": [
+    0.735,
+    0.618,
+    0.535
+   ],
+   "triangulos": 252,
+   "arquivo": "modelos/gerador.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.3088,
+     0
+    ],
+    "meia": [
+     0.3675,
+     0.3088,
+     0.2675
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/gerador.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "cadeira_dobravel",
+   "nome": "Cadeira dobrável",
+   "categoria": "apoio",
+   "material": "metal",
+   "massa": 4,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "apoio",
+    "corrida",
+    "cidade"
+   ],
+   "dimensoes": [
+    0.46,
+    0.909,
+    0.442
+   ],
+   "triangulos": 88,
+   "arquivo": "modelos/cadeira_dobravel.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.4491,
+     0.0066
+    ],
+    "meia": [
+     0.23,
+     0.4545,
+     0.2211
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/cadeira_dobravel.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "cadeira_plastico",
+   "nome": "Cadeira de plástico",
+   "categoria": "apoio",
+   "material": "plastico",
+   "massa": 3,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "apoio",
+    "cidade",
+    "corrida"
+   ],
+   "dimensoes": [
+    0.46,
+    0.919,
+    0.498
+   ],
+   "triangulos": 204,
+   "arquivo": "modelos/cadeira_plastico.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.4593,
+     -0.0192
+    ],
+    "meia": [
+     0.23,
+     0.4593,
+     0.2492
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/cadeira_plastico.jpg",
+   "textura": "texturas/prop_plastico.png"
+  },
+  {
+   "id": "mesa_dobravel",
+   "nome": "Mesa dobrável",
+   "categoria": "apoio",
+   "material": "plastico",
+   "massa": 14,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "apoio",
+    "corrida",
+    "cidade"
+   ],
+   "dimensoes": [
+    1.8,
+    0.75,
+    0.75
+   ],
+   "triangulos": 156,
+   "arquivo": "modelos/mesa_dobravel.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.375,
+     0
+    ],
+    "meia": [
+     0.9,
+     0.375,
+     0.375
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/mesa_dobravel.jpg",
+   "textura": "texturas/prop_plastico.png"
+  },
+  {
+   "id": "garrafao_agua",
+   "nome": "Garrafão de água",
+   "categoria": "apoio",
+   "material": "plastico",
+   "massa": 20,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "apoio",
+    "cidade",
+    "concessionaria"
+   ],
+   "dimensoes": [
+    0.266,
+    0.5,
+    0.28
+   ],
+   "triangulos": 204,
+   "arquivo": "modelos/garrafao_agua.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.25,
+     0
+    ],
+    "raio": 0.14,
+    "meiaAltura": 0.25
+   },
+   "pedacos": [],
+   "previa": "previas/garrafao_agua.jpg",
+   "textura": "texturas/prop_plastico.png"
+  },
+  {
+   "id": "galao_combustivel",
+   "nome": "Galão de combustível",
+   "categoria": "apoio",
+   "material": "metal",
+   "massa": 5,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "apoio",
+    "corrida"
+   ],
+   "dimensoes": [
+    0.18,
+    0.533,
+    0.388
+   ],
+   "triangulos": 100,
+   "arquivo": "modelos/galao_combustivel.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.2667,
+     0.0192
+    ],
+    "meia": [
+     0.09,
+     0.2667,
+     0.1942
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/galao_combustivel.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "caixa_termica",
+   "nome": "Caixa térmica",
+   "categoria": "apoio",
+   "material": "plastico",
+   "massa": 7,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "apoio",
+    "cidade",
+    "corrida"
+   ],
+   "dimensoes": [
+    0.65,
+    0.405,
+    0.38
+   ],
+   "triangulos": 112,
+   "arquivo": "modelos/caixa_termica.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.2025,
+     0
+    ],
+    "meia": [
+     0.325,
+     0.2025,
+     0.19
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/caixa_termica.jpg",
+   "textura": "texturas/prop_plastico.png"
+  },
+  {
+   "id": "roda_rali",
+   "nome": "Roda de rali",
+   "categoria": "apoio",
+   "material": "borracha",
+   "massa": 18,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "apoio",
+    "concessionaria",
+    "corrida"
+   ],
+   "dimensoes": [
+    0.618,
+    0.22,
+    0.618
+   ],
+   "triangulos": 192,
+   "arquivo": "modelos/roda_rali.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.11,
+     0
+    ],
+    "raio": 0.32,
+    "meiaAltura": 0.11
+   },
+   "pedacos": [],
+   "previa": "previas/roda_rali.jpg",
+   "textura": "texturas/prop_borracha.png"
+  },
+  {
+   "id": "rodas_pilha",
+   "nome": "Pilha de rodas",
+   "categoria": "apoio",
+   "material": "borracha",
+   "massa": 72,
+   "quebra": true,
+   "resistencia": 216,
+   "pecas": 4,
+   "voa": false,
+   "usos": [
+    "apoio",
+    "corrida"
+   ],
+   "dimensoes": [
+    0.618,
+    0.88,
+    0.618
+   ],
+   "triangulos": 768,
+   "arquivo": "modelos/rodas_pilha.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.44,
+     0
+    ],
+    "raio": 0.32,
+    "meiaAltura": 0.44
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      0.11,
+      0
+     ],
+     "meia": [
+      0.3091,
+      0.11,
+      0.3091
+     ],
+     "triangulos": 192,
+     "massa": 18
+    },
+    {
+     "centro": [
+      0,
+      0.33,
+      0
+     ],
+     "meia": [
+      0.3091,
+      0.11,
+      0.3091
+     ],
+     "triangulos": 192,
+     "massa": 18
+    },
+    {
+     "centro": [
+      0,
+      0.55,
+      0
+     ],
+     "meia": [
+      0.3091,
+      0.11,
+      0.3091
+     ],
+     "triangulos": 192,
+     "massa": 18
+    },
+    {
+     "centro": [
+      0,
+      0.77,
+      0
+     ],
+     "meia": [
+      0.3091,
+      0.11,
+      0.3091
+     ],
+     "triangulos": 192,
+     "massa": 18
+    }
+   ],
+   "previa": "previas/rodas_pilha.jpg",
+   "textura": "texturas/prop_borracha.png"
+  },
+  {
+   "id": "para_choque",
+   "nome": "Para-choque reserva",
+   "categoria": "apoio",
+   "material": "plastico",
+   "massa": 6,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "apoio"
+   ],
+   "dimensoes": [
+    1.076,
+    0.28,
+    0.25
+   ],
+   "triangulos": 392,
+   "arquivo": "modelos/para_choque.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.14,
+     -0.0719
+    ],
+    "meia": [
+     0.5382,
+     0.14,
+     0.1248
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/para_choque.jpg",
+   "textura": "texturas/prop_plastico.png"
+  },
+  {
+   "id": "capo_reserva",
+   "nome": "Capô reserva",
+   "categoria": "apoio",
+   "material": "metal",
+   "massa": 12,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "apoio"
+   ],
+   "dimensoes": [
+    1.3,
+    0.09,
+    1
+   ],
+   "triangulos": 112,
+   "arquivo": "modelos/capo_reserva.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.06,
+     0
+    ],
+    "meia": [
+     0.65,
+     0.045,
+     0.5
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/capo_reserva.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "tenda_dobravel",
+   "nome": "Tenda dobrável",
+   "categoria": "apoio",
+   "material": "tecido",
+   "massa": 30,
+   "quebra": true,
+   "resistencia": 180,
+   "pecas": 5,
+   "voa": true,
+   "usos": [
+    "apoio",
+    "corrida",
+    "cidade"
+   ],
+   "dimensoes": [
+    2.97,
+    2.6,
+    2.97
+   ],
+   "triangulos": 72,
+   "arquivo": "modelos/tenda_dobravel.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     1.3,
+     0
+    ],
+    "meia": [
+     1.4849,
+     1.3,
+     1.4849
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -1.45,
+      1.05,
+      1.45
+     ],
+     "meia": [
+      0.025,
+      1.05,
+      0.025
+     ],
+     "triangulos": 12,
+     "massa": 0.024
+    },
+    {
+     "centro": [
+      1.45,
+      1.05,
+      1.45
+     ],
+     "meia": [
+      0.025,
+      1.05,
+      0.025
+     ],
+     "triangulos": 12,
+     "massa": 0.024
+    },
+    {
+     "centro": [
+      -1.45,
+      1.05,
+      -1.45
+     ],
+     "meia": [
+      0.025,
+      1.05,
+      0.025
+     ],
+     "triangulos": 12,
+     "massa": 0.024
+    },
+    {
+     "centro": [
+      1.45,
+      1.05,
+      -1.45
+     ],
+     "meia": [
+      0.025,
+      1.05,
+      0.025
+     ],
+     "triangulos": 12,
+     "massa": 0.024
+    },
+    {
+     "centro": [
+      0,
+      2.225,
+      0
+     ],
+     "meia": [
+      1.4849,
+      0.375,
+      1.4849
+     ],
+     "triangulos": 24,
+     "massa": 29.905
+    }
+   ],
+   "previa": "previas/tenda_dobravel.jpg",
+   "textura": "texturas/prop_tecido.png"
+  },
+  {
+   "id": "extintor",
+   "nome": "Extintor",
+   "categoria": "apoio",
+   "material": "metal",
+   "massa": 9,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "apoio",
+    "concessionaria",
+    "cidade"
+   ],
+   "dimensoes": [
+    0.166,
+    0.605,
+    0.191
+   ],
+   "triangulos": 108,
+   "arquivo": "modelos/extintor.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.31,
+     0
+    ],
+    "raio": 0.09,
+    "meiaAltura": 0.31
+   },
+   "pedacos": [],
+   "previa": "previas/extintor.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "balde",
+   "nome": "Balde",
+   "categoria": "apoio",
+   "material": "plastico",
+   "massa": 1,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "apoio",
+    "cidade",
+    "corrida"
+   ],
+   "dimensoes": [
+    0.306,
+    0.423,
+    0.3
+   ],
+   "triangulos": 112,
+   "arquivo": "modelos/balde.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.15,
+     0
+    ],
+    "raio": 0.15,
+    "meiaAltura": 0.15
+   },
+   "pedacos": [],
+   "previa": "previas/balde.jpg",
+   "textura": "texturas/prop_plastico.png"
+  },
+  {
+   "id": "bancada_trabalho",
+   "nome": "Bancada de trabalho",
+   "categoria": "apoio",
+   "material": "madeira",
+   "massa": 45,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": false,
+   "usos": [
+    "apoio"
+   ],
+   "dimensoes": [
+    1.6,
+    0.98,
+    0.7
+   ],
+   "triangulos": 192,
+   "arquivo": "modelos/bancada_trabalho.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.49,
+     0
+    ],
+    "meia": [
+     0.8,
+     0.49,
+     0.35
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/bancada_trabalho.jpg",
+   "textura": "texturas/prop_madeira.png"
+  },
+  {
+   "id": "estante_pecas",
+   "nome": "Estante de peças",
+   "categoria": "apoio",
+   "material": "metal",
+   "massa": 40,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "apoio"
+   ],
+   "dimensoes": [
+    1.2,
+    1.8,
+    0.48
+   ],
+   "triangulos": 316,
+   "arquivo": "modelos/estante_pecas.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.9,
+     0
+    ],
+    "meia": [
+     0.6,
+     0.9,
+     0.24
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/estante_pecas.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "caixa_pecas",
+   "nome": "Caixa plástica de peças",
+   "categoria": "apoio",
+   "material": "plastico",
+   "massa": 3,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "apoio",
+    "cidade"
+   ],
+   "dimensoes": [
+    0.6,
+    0.3,
+    0.41
+   ],
+   "triangulos": 92,
+   "arquivo": "modelos/caixa_pecas.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.15,
+     0.005
+    ],
+    "meia": [
+     0.3,
+     0.15,
+     0.205
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/caixa_pecas.jpg",
+   "textura": "texturas/prop_plastico.png"
+  },
+  {
+   "id": "mangueira_enrolada",
+   "nome": "Mangueira enrolada",
+   "categoria": "apoio",
+   "material": "plastico",
+   "massa": 8,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "apoio",
+    "cidade"
+   ],
+   "dimensoes": [
+    0.39,
+    0.557,
+    0.464
+   ],
+   "triangulos": 184,
+   "arquivo": "modelos/mangueira_enrolada.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.2731,
+     0
+    ],
+    "meia": [
+     0.195,
+     0.2787,
+     0.2318
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/mangueira_enrolada.jpg",
+   "textura": "texturas/prop_plastico.png"
+  },
+  {
+   "id": "bandeira_vela",
+   "nome": "Bandeira vela",
+   "categoria": "apoio",
+   "material": "tecido",
+   "massa": 3,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "apoio",
+    "concessionaria",
+    "corrida"
+   ],
+   "dimensoes": [
+    0.853,
+    2.808,
+    0.706
+   ],
+   "triangulos": 120,
+   "arquivo": "modelos/bandeira_vela.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     1.4,
+     0
+    ],
+    "raio": 0.3,
+    "meiaAltura": 1.4
+   },
+   "pedacos": [],
+   "previa": "previas/bandeira_vela.jpg",
+   "textura": "texturas/prop_tecido.png"
+  },
+  {
+   "id": "placa_parque",
+   "nome": "Painel do parque de apoio",
+   "categoria": "apoio",
+   "material": "madeira",
+   "massa": 16,
+   "quebra": true,
+   "resistencia": 48,
+   "pecas": 4,
+   "voa": true,
+   "usos": [
+    "apoio",
+    "corrida"
+   ],
+   "dimensoes": [
+    1.4,
+    1.8,
+    0.086
+   ],
+   "triangulos": 116,
+   "arquivo": "modelos/placa_parque.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.9,
+     -0.022
+    ],
+    "meia": [
+     0.7,
+     0.9,
+     0.043
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.6,
+      0.9,
+      -0.03
+     ],
+     "meia": [
+      0.035,
+      0.9,
+      0.035
+     ],
+     "triangulos": 12,
+     "massa": 2.267
+    },
+    {
+     "centro": [
+      0.6,
+      0.9,
+      -0.03
+     ],
+     "meia": [
+      0.035,
+      0.9,
+      0.035
+     ],
+     "triangulos": 12,
+     "massa": 2.267
+    },
+    {
+     "centro": [
+      0,
+      1.4,
+      0.003
+     ],
+     "meia": [
+      0.7,
+      0.4,
+      0.018
+     ],
+     "triangulos": 68,
+     "massa": 10.364
+    },
+    {
+     "centro": [
+      0.175,
+      1.3,
+      0.018
+     ],
+     "meia": [
+      0.315,
+      0.17,
+      0.01
+     ],
+     "triangulos": 24,
+     "massa": 1.101
+    }
+   ],
+   "previa": "previas/placa_parque.jpg",
+   "textura": "texturas/prop_madeira.png"
+  },
+  {
+   "id": "rack_pneus",
+   "nome": "Rack de pneus",
+   "categoria": "apoio",
+   "material": "metal",
+   "massa": 60,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": false,
+   "usos": [
+    "apoio",
+    "concessionaria"
+   ],
+   "dimensoes": [
+    1.54,
+    0.9,
+    0.618
+   ],
+   "triangulos": 624,
+   "arquivo": "modelos/rack_pneus.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.45,
+     0
+    ],
+    "meia": [
+     0.77,
+     0.45,
+     0.3091
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/rack_pneus.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "vaso_planta",
+   "nome": "Vaso com planta",
+   "categoria": "concessionaria",
+   "material": "concreto",
+   "massa": 25,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "concessionaria",
+    "cidade"
+   ],
+   "dimensoes": [
+    0.667,
+    1.197,
+    0.692
+   ],
+   "triangulos": 100,
+   "arquivo": "modelos/vaso_planta.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.5,
+     0
+    ],
+    "raio": 0.26,
+    "meiaAltura": 0.5
+   },
+   "pedacos": [],
+   "previa": "previas/vaso_planta.jpg",
+   "textura": "texturas/prop_concreto.png"
+  },
+  {
+   "id": "vaso_alto",
+   "nome": "Vaso alto com capim",
+   "categoria": "concessionaria",
+   "material": "concreto",
+   "massa": 40,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "concessionaria",
+    "cidade"
+   ],
+   "dimensoes": [
+    0.407,
+    1.465,
+    0.407
+   ],
+   "triangulos": 120,
+   "arquivo": "modelos/vaso_alto.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.65,
+     0
+    ],
+    "raio": 0.22,
+    "meiaAltura": 0.65
+   },
+   "pedacos": [],
+   "previa": "previas/vaso_alto.jpg",
+   "textura": "texturas/prop_concreto.png"
+  },
+  {
+   "id": "palmeira_vaso",
+   "nome": "Palmeira em vaso",
+   "categoria": "concessionaria",
+   "material": "vegetal",
+   "massa": 30,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "concessionaria"
+   ],
+   "dimensoes": [
+    1.2,
+    1.55,
+    1.039
+   ],
+   "triangulos": 80,
+   "arquivo": "modelos/palmeira_vaso.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.9,
+     0
+    ],
+    "raio": 0.3,
+    "meiaAltura": 0.9
+   },
+   "pedacos": [],
+   "previa": "previas/palmeira_vaso.jpg",
+   "textura": "texturas/prop_vegetal.png"
+  },
+  {
+   "id": "sofa",
+   "nome": "Sofá de dois lugares",
+   "categoria": "concessionaria",
+   "material": "tecido",
+   "massa": 45,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": false,
+   "usos": [
+    "concessionaria"
+   ],
+   "dimensoes": [
+    1.52,
+    0.875,
+    0.81
+   ],
+   "triangulos": 344,
+   "arquivo": "modelos/sofa.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.4375,
+     -0.005
+    ],
+    "meia": [
+     0.76,
+     0.4375,
+     0.405
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/sofa.jpg",
+   "textura": "texturas/prop_tecido.png"
+  },
+  {
+   "id": "poltrona",
+   "nome": "Poltrona",
+   "categoria": "concessionaria",
+   "material": "tecido",
+   "massa": 25,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "concessionaria"
+   ],
+   "dimensoes": [
+    0.8,
+    0.835,
+    0.8
+   ],
+   "triangulos": 220,
+   "arquivo": "modelos/poltrona.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.4775,
+     0
+    ],
+    "meia": [
+     0.4,
+     0.4175,
+     0.4
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/poltrona.jpg",
+   "textura": "texturas/prop_tecido.png"
+  },
+  {
+   "id": "mesa_centro_vidro",
+   "nome": "Mesa de centro de vidro",
+   "categoria": "concessionaria",
+   "material": "vidro",
+   "massa": 25,
+   "quebra": true,
+   "resistencia": 50,
+   "pecas": 4,
+   "voa": true,
+   "usos": [
+    "concessionaria"
+   ],
+   "dimensoes": [
+    1,
+    0.435,
+    0.6
+   ],
+   "triangulos": 72,
+   "arquivo": "modelos/mesa_centro_vidro.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.2125,
+     0
+    ],
+    "meia": [
+     0.5,
+     0.2175,
+     0.3
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.2391,
+      0.2125,
+      0.1575
+     ],
+     "meia": [
+      0.2609,
+      0.2175,
+      0.1425
+     ],
+     "triangulos": 36,
+     "massa": 4.766
+    },
+    {
+     "centro": [
+      -0.265,
+      0.2125,
+      -0.0856
+     ],
+     "meia": [
+      0.235,
+      0.2175,
+      0.2144
+     ],
+     "triangulos": 36,
+     "massa": 6.456
+    },
+    {
+     "centro": [
+      0.2214,
+      0.2125,
+      0.1231
+     ],
+     "meia": [
+      0.2786,
+      0.2175,
+      0.1769
+     ],
+     "triangulos": 36,
+     "massa": 6.313
+    },
+    {
+     "centro": [
+      0.1812,
+      0.2125,
+      -0.1173
+     ],
+     "meia": [
+      0.3188,
+      0.2175,
+      0.1827
+     ],
+     "triangulos": 36,
+     "massa": 7.465
+    }
+   ],
+   "previa": "previas/mesa_centro_vidro.jpg",
+   "textura": "texturas/prop_vidro.png"
+  },
+  {
+   "id": "balcao_recepcao",
+   "nome": "Balcão de recepção",
+   "categoria": "concessionaria",
+   "material": "madeira",
+   "massa": 140,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": false,
+   "usos": [
+    "concessionaria"
+   ],
+   "dimensoes": [
+    2.1,
+    1.411,
+    0.815
+   ],
+   "triangulos": 136,
+   "arquivo": "modelos/balcao_recepcao.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.7057,
+     0.0075
+    ],
+    "meia": [
+     1.05,
+     0.7057,
+     0.4075
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/balcao_recepcao.jpg",
+   "textura": "texturas/prop_madeira.png"
+  },
+  {
+   "id": "totem_informativo",
+   "nome": "Totem informativo",
+   "categoria": "concessionaria",
+   "material": "metal",
+   "massa": 40,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "concessionaria",
+    "cidade"
+   ],
+   "dimensoes": [
+    0.6,
+    1.85,
+    0.4
+   ],
+   "triangulos": 124,
+   "arquivo": "modelos/totem_informativo.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.925,
+     0
+    ],
+    "meia": [
+     0.3,
+     0.925,
+     0.2
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/totem_informativo.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "expositor_rodas",
+   "nome": "Expositor de rodas",
+   "categoria": "concessionaria",
+   "material": "metal",
+   "massa": 35,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "concessionaria",
+    "apoio"
+   ],
+   "dimensoes": [
+    1.6,
+    1.8,
+    0.5
+   ],
+   "triangulos": 664,
+   "arquivo": "modelos/expositor_rodas.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.9,
+     0
+    ],
+    "meia": [
+     0.8,
+     0.9,
+     0.25
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/expositor_rodas.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "expositor_pneus",
+   "nome": "Torre de pneus",
+   "categoria": "concessionaria",
+   "material": "borracha",
+   "massa": 60,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": false,
+   "usos": [
+    "concessionaria",
+    "apoio"
+   ],
+   "dimensoes": [
+    0.761,
+    1.42,
+    0.8
+   ],
+   "triangulos": 672,
+   "arquivo": "modelos/expositor_pneus.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.7,
+     0
+    ],
+    "raio": 0.34,
+    "meiaAltura": 0.7
+   },
+   "pedacos": [],
+   "previa": "previas/expositor_pneus.jpg",
+   "textura": "texturas/prop_borracha.png"
+  },
+  {
+   "id": "cadeira_escritorio",
+   "nome": "Cadeira de escritório",
+   "categoria": "concessionaria",
+   "material": "plastico",
+   "massa": 12,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "concessionaria"
+   ],
+   "dimensoes": [
+    0.596,
+    1.074,
+    0.622
+   ],
+   "triangulos": 292,
+   "arquivo": "modelos/cadeira_escritorio.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0.0286,
+     0.5369,
+     0
+    ],
+    "meia": [
+     0.2982,
+     0.5369,
+     0.3108
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/cadeira_escritorio.jpg",
+   "textura": "texturas/prop_plastico.png"
+  },
+  {
+   "id": "mesa_vendedor",
+   "nome": "Mesa de vendedor",
+   "categoria": "concessionaria",
+   "material": "madeira",
+   "massa": 50,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": false,
+   "usos": [
+    "concessionaria"
+   ],
+   "dimensoes": [
+    1.4,
+    1.121,
+    0.7
+   ],
+   "triangulos": 116,
+   "arquivo": "modelos/mesa_vendedor.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.5604,
+     0
+    ],
+    "meia": [
+     0.7,
+     0.5604,
+     0.35
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/mesa_vendedor.jpg",
+   "textura": "texturas/prop_madeira.png"
+  },
+  {
+   "id": "banqueta",
+   "nome": "Banqueta alta",
+   "categoria": "concessionaria",
+   "material": "metal",
+   "massa": 5,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "concessionaria",
+    "cidade"
+   ],
+   "dimensoes": [
+    0.38,
+    0.75,
+    0.4
+   ],
+   "triangulos": 124,
+   "arquivo": "modelos/banqueta.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.375,
+     0
+    ],
+    "raio": 0.2,
+    "meiaAltura": 0.375
+   },
+   "pedacos": [],
+   "previa": "previas/banqueta.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "luminaria_chao",
+   "nome": "Luminária de chão",
+   "categoria": "concessionaria",
+   "material": "metal",
+   "massa": 6,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "concessionaria"
+   ],
+   "dimensoes": [
+    0.418,
+    1.68,
+    0.44
+   ],
+   "triangulos": 140,
+   "arquivo": "modelos/luminaria_chao.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.85,
+     0
+    ],
+    "raio": 0.2,
+    "meiaAltura": 0.85
+   },
+   "pedacos": [],
+   "previa": "previas/luminaria_chao.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "divisoria_vidro",
+   "nome": "Divisória de vidro",
+   "categoria": "concessionaria",
+   "material": "vidro",
+   "massa": 30,
+   "quebra": true,
+   "resistencia": 60,
+   "pecas": 6,
+   "voa": true,
+   "usos": [
+    "concessionaria",
+    "cidade"
+   ],
+   "dimensoes": [
+    1.62,
+    1.94,
+    0.5
+   ],
+   "triangulos": 60,
+   "arquivo": "modelos/divisoria_vidro.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.97,
+     0
+    ],
+    "meia": [
+     0.81,
+     0.97,
+     0.25
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.4606,
+      0.6419,
+      0
+     ],
+     "meia": [
+      0.3394,
+      0.6419,
+      0.25
+     ],
+     "triangulos": 36,
+     "massa": 15.612
+    },
+    {
+     "centro": [
+      -0.5851,
+      1.5509,
+      0
+     ],
+     "meia": [
+      0.2249,
+      0.3891,
+      0.02
+     ],
+     "triangulos": 24,
+     "massa": 0.502
+    },
+    {
+     "centro": [
+      -0.016,
+      0.6322,
+      0.002
+     ],
+     "meia": [
+      0.3503,
+      0.5322,
+      0.012
+     ],
+     "triangulos": 24,
+     "massa": 0.641
+    },
+    {
+     "centro": [
+      -0.0127,
+      1.4558,
+      0
+     ],
+     "meia": [
+      0.531,
+      0.4842,
+      0.02
+     ],
+     "triangulos": 36,
+     "massa": 1.474
+    },
+    {
+     "centro": [
+      0.4835,
+      0.4858,
+      0
+     ],
+     "meia": [
+      0.3165,
+      0.4858,
+      0.25
+     ],
+     "triangulos": 24,
+     "massa": 11.018
+    },
+    {
+     "centro": [
+      0.5705,
+      1.3913,
+      0
+     ],
+     "meia": [
+      0.2395,
+      0.5487,
+      0.02
+     ],
+     "triangulos": 36,
+     "massa": 0.753
+    }
+   ],
+   "previa": "previas/divisoria_vidro.jpg",
+   "textura": "texturas/prop_vidro.png"
+  },
+  {
+   "id": "plataforma_giratoria",
+   "nome": "Plataforma giratória",
+   "categoria": "concessionaria",
+   "material": "metal",
+   "massa": 400,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": false,
+   "usos": [
+    "concessionaria"
+   ],
+   "dimensoes": [
+    3.966,
+    0.172,
+    3.966
+   ],
+   "triangulos": 336,
+   "arquivo": "modelos/plataforma_giratoria.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.09,
+     0
+    ],
+    "raio": 2,
+    "meiaAltura": 0.09
+   },
+   "pedacos": [],
+   "previa": "previas/plataforma_giratoria.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "pedestal_corda",
+   "nome": "Pedestal com cordão",
+   "categoria": "concessionaria",
+   "material": "metal",
+   "massa": 9,
+   "quebra": true,
+   "resistencia": 36,
+   "pecas": 3,
+   "voa": true,
+   "usos": [
+    "concessionaria"
+   ],
+   "dimensoes": [
+    1.885,
+    0.995,
+    0.3
+   ],
+   "triangulos": 328,
+   "arquivo": "modelos/pedestal_corda.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.4975,
+     0
+    ],
+    "meia": [
+     0.9427,
+     0.4975,
+     0.15
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.8,
+      0.4975,
+      0
+     ],
+     "meia": [
+      0.1427,
+      0.4975,
+      0.15
+     ],
+     "triangulos": 84,
+     "massa": 4.197
+    },
+    {
+     "centro": [
+      0.8,
+      0.4975,
+      0
+     ],
+     "meia": [
+      0.1427,
+      0.4975,
+      0.15
+     ],
+     "triangulos": 84,
+     "massa": 4.197
+    },
+    {
+     "centro": [
+      0,
+      0.7868,
+      0
+     ],
+     "meia": [
+      0.7858,
+      0.103,
+      0.019
+     ],
+     "triangulos": 160,
+     "massa": 0.607
+    }
+   ],
+   "previa": "previas/pedestal_corda.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "banco_praca",
+   "nome": "Banco de praça",
+   "categoria": "cidade",
+   "material": "madeira",
+   "massa": 40,
+   "quebra": true,
+   "resistencia": 160,
+   "pecas": 6,
+   "voa": true,
+   "usos": [
+    "cidade",
+    "concessionaria",
+    "apoio"
+   ],
+   "dimensoes": [
+    1.7,
+    0.86,
+    0.507
+   ],
+   "triangulos": 328,
+   "arquivo": "modelos/banco_praca.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.43,
+     -0.0037
+    ],
+    "meia": [
+     0.85,
+     0.43,
+     0.2537
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0.75,
+      0.43,
+      0
+     ],
+     "meia": [
+      0.025,
+      0.43,
+      0.25
+     ],
+     "triangulos": 32,
+     "massa": 9.81
+    },
+    {
+     "centro": [
+      -0.75,
+      0.43,
+      0
+     ],
+     "meia": [
+      0.025,
+      0.43,
+      0.25
+     ],
+     "triangulos": 32,
+     "massa": 9.81
+    },
+    {
+     "centro": [
+      0,
+      0.43,
+      0.125
+     ],
+     "meia": [
+      0.85,
+      0.0175,
+      0.1
+     ],
+     "triangulos": 88,
+     "massa": 5.43
+    },
+    {
+     "centro": [
+      0,
+      0.43,
+      -0.095
+     ],
+     "meia": [
+      0.85,
+      0.0175,
+      0.1
+     ],
+     "triangulos": 88,
+     "massa": 5.43
+    },
+    {
+     "centro": [
+      0,
+      0.6,
+      -0.2
+     ],
+     "meia": [
+      0.85,
+      0.0562,
+      0.0273
+     ],
+     "triangulos": 44,
+     "massa": 4.76
+    },
+    {
+     "centro": [
+      0,
+      0.76,
+      -0.23
+     ],
+     "meia": [
+      0.85,
+      0.0562,
+      0.0273
+     ],
+     "triangulos": 44,
+     "massa": 4.76
+    }
+   ],
+   "previa": "previas/banco_praca.jpg",
+   "textura": "texturas/prop_madeira.png"
+  },
+  {
+   "id": "poste_luz",
+   "nome": "Poste de luz",
+   "categoria": "cidade",
+   "material": "metal",
+   "massa": 220,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": false,
+   "usos": [
+    "cidade",
+    "concessionaria"
+   ],
+   "dimensoes": [
+    0.259,
+    5.133,
+    1.404
+   ],
+   "triangulos": 144,
+   "arquivo": "modelos/poste_luz.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     2.5,
+     0
+    ],
+    "raio": 0.12,
+    "meiaAltura": 2.5
+   },
+   "pedacos": [],
+   "previa": "previas/poste_luz.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "lixeira",
+   "nome": "Lixeira de rua",
+   "categoria": "cidade",
+   "material": "metal",
+   "massa": 15,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "cidade",
+    "concessionaria",
+    "apoio"
+   ],
+   "dimensoes": [
+    0.506,
+    0.98,
+    0.52
+   ],
+   "triangulos": 222,
+   "arquivo": "modelos/lixeira.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.475,
+     0
+    ],
+    "raio": 0.24,
+    "meiaAltura": 0.475
+   },
+   "pedacos": [],
+   "previa": "previas/lixeira.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "lixeira_container",
+   "nome": "Contêiner de lixo com rodas",
+   "categoria": "cidade",
+   "material": "plastico",
+   "massa": 14,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "cidade",
+    "apoio"
+   ],
+   "dimensoes": [
+    0.65,
+    1.02,
+    0.84
+   ],
+   "triangulos": 136,
+   "arquivo": "modelos/lixeira_container.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0.005,
+     0.51,
+     -0.04
+    ],
+    "meia": [
+     0.325,
+     0.51,
+     0.42
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/lixeira_container.jpg",
+   "textura": "texturas/prop_plastico.png"
+  },
+  {
+   "id": "hidrante",
+   "nome": "Hidrante",
+   "categoria": "cidade",
+   "material": "metal",
+   "massa": 90,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": false,
+   "usos": [
+    "cidade"
+   ],
+   "dimensoes": [
+    0.34,
+    0.82,
+    0.32
+   ],
+   "triangulos": 268,
+   "arquivo": "modelos/hidrante.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.4,
+     0
+    ],
+    "raio": 0.16,
+    "meiaAltura": 0.4
+   },
+   "pedacos": [],
+   "previa": "previas/hidrante.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "banca_jornal",
+   "nome": "Banca de revistas",
+   "categoria": "cidade",
+   "material": "metal",
+   "massa": 380,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": false,
+   "usos": [
+    "cidade"
+   ],
+   "dimensoes": [
+    2.5,
+    2.36,
+    2.094
+   ],
+   "triangulos": 400,
+   "arquivo": "modelos/banca_jornal.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     1.18,
+     0.147
+    ],
+    "meia": [
+     1.25,
+     1.18,
+     1.047
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/banca_jornal.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "placa_pare",
+   "nome": "Placa octogonal de parada",
+   "categoria": "cidade",
+   "material": "metal",
+   "massa": 10,
+   "quebra": true,
+   "resistencia": 100,
+   "pecas": 2,
+   "voa": true,
+   "usos": [
+    "cidade",
+    "corrida"
+   ],
+   "dimensoes": [
+    0.61,
+    2.255,
+    0.099
+   ],
+   "triangulos": 92,
+   "arquivo": "modelos/placa_pare.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     1.1274,
+     -0.0155
+    ],
+    "meia": [
+     0.3049,
+     1.1274,
+     0.0495
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      1.1,
+      -0.03
+     ],
+     "meia": [
+      0.0303,
+      1.1,
+      0.035
+     ],
+     "triangulos": 24,
+     "massa": 5.113
+    },
+    {
+     "centro": [
+      0,
+      1.95,
+      0.022
+     ],
+     "meia": [
+      0.3049,
+      0.3049,
+      0.012
+     ],
+     "triangulos": 68,
+     "massa": 4.887
+    }
+   ],
+   "previa": "previas/placa_pare.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "placa_seta",
+   "nome": "Placa de direção",
+   "categoria": "cidade",
+   "material": "metal",
+   "massa": 10,
+   "quebra": true,
+   "resistencia": 100,
+   "pecas": 2,
+   "voa": true,
+   "usos": [
+    "cidade",
+    "corrida"
+   ],
+   "dimensoes": [
+    0.8,
+    2.2,
+    0.095
+   ],
+   "triangulos": 60,
+   "arquivo": "modelos/placa_seta.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     1.1,
+     -0.0175
+    ],
+    "meia": [
+     0.4,
+     1.1,
+     0.0475
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      1.1,
+      -0.03
+     ],
+     "meia": [
+      0.0303,
+      1.1,
+      0.035
+     ],
+     "triangulos": 24,
+     "massa": 4.73
+    },
+    {
+     "centro": [
+      0,
+      1.95,
+      0.0137
+     ],
+     "meia": [
+      0.4,
+      0.2,
+      0.0162
+     ],
+     "triangulos": 36,
+     "massa": 5.27
+    }
+   ],
+   "previa": "previas/placa_seta.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "placa_proibido",
+   "nome": "Placa circular de proibição",
+   "categoria": "cidade",
+   "material": "metal",
+   "massa": 10,
+   "quebra": true,
+   "resistencia": 100,
+   "pecas": 2,
+   "voa": true,
+   "usos": [
+    "cidade"
+   ],
+   "dimensoes": [
+    0.624,
+    2.27,
+    0.098
+   ],
+   "triangulos": 148,
+   "arquivo": "modelos/placa_proibido.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     1.135,
+     -0.016
+    ],
+    "meia": [
+     0.312,
+     1.135,
+     0.049
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      1.1,
+      -0.03
+     ],
+     "meia": [
+      0.0303,
+      1.1,
+      0.035
+     ],
+     "triangulos": 24,
+     "massa": 5.041
+    },
+    {
+     "centro": [
+      0,
+      1.95,
+      0.0215
+     ],
+     "meia": [
+      0.312,
+      0.32,
+      0.0115
+     ],
+     "triangulos": 124,
+     "massa": 4.959
+    }
+   ],
+   "previa": "previas/placa_proibido.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "semaforo",
+   "nome": "Semáforo",
+   "categoria": "cidade",
+   "material": "metal",
+   "massa": 130,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": false,
+   "usos": [
+    "cidade"
+   ],
+   "dimensoes": [
+    0.3,
+    3.625,
+    0.325
+   ],
+   "triangulos": 256,
+   "arquivo": "modelos/semaforo.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     1.8,
+     0
+    ],
+    "raio": 0.12,
+    "meiaAltura": 1.8
+   },
+   "pedacos": [],
+   "previa": "previas/semaforo.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "pilarete",
+   "nome": "Pilarete",
+   "categoria": "cidade",
+   "material": "concreto",
+   "massa": 60,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": false,
+   "usos": [
+    "cidade",
+    "concessionaria"
+   ],
+   "dimensoes": [
+    0.247,
+    0.8,
+    0.26
+   ],
+   "triangulos": 80,
+   "arquivo": "modelos/pilarete.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.4,
+     0
+    ],
+    "raio": 0.13,
+    "meiaAltura": 0.4
+   },
+   "pedacos": [],
+   "previa": "previas/pilarete.jpg",
+   "textura": "texturas/prop_concreto.png"
+  },
+  {
+   "id": "floreira_concreto",
+   "nome": "Floreira de concreto",
+   "categoria": "cidade",
+   "material": "concreto",
+   "massa": 420,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": false,
+   "usos": [
+    "cidade",
+    "concessionaria"
+   ],
+   "dimensoes": [
+    1.433,
+    1.067,
+    0.7
+   ],
+   "triangulos": 116,
+   "arquivo": "modelos/floreira_concreto.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     -0.0097,
+     0.5334,
+     0
+    ],
+    "meia": [
+     0.7166,
+     0.5334,
+     0.35
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/floreira_concreto.jpg",
+   "textura": "texturas/prop_concreto.png"
+  },
+  {
+   "id": "caixa_correio",
+   "nome": "Caixa de correio",
+   "categoria": "cidade",
+   "material": "metal",
+   "massa": 15,
+   "quebra": true,
+   "resistencia": 120,
+   "pecas": 2,
+   "voa": true,
+   "usos": [
+    "cidade"
+   ],
+   "dimensoes": [
+    0.32,
+    1.302,
+    0.462
+   ],
+   "triangulos": 120,
+   "arquivo": "modelos/caixa_correio.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.6511,
+     0.006
+    ],
+    "meia": [
+     0.16,
+     0.6511,
+     0.231
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      0.425,
+      0
+     ],
+     "meia": [
+      0.0346,
+      0.425,
+      0.04
+     ],
+     "triangulos": 24,
+     "massa": 0.988
+    },
+    {
+     "centro": [
+      0,
+      1.0761,
+      0.006
+     ],
+     "meia": [
+      0.16,
+      0.2261,
+      0.231
+     ],
+     "triangulos": 96,
+     "massa": 14.012
+    }
+   ],
+   "previa": "previas/caixa_correio.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "ponto_onibus",
+   "nome": "Abrigo de ponto",
+   "categoria": "cidade",
+   "material": "metal",
+   "massa": 320,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": false,
+   "usos": [
+    "cidade"
+   ],
+   "dimensoes": [
+    3.1,
+    2.4,
+    1.4
+   ],
+   "triangulos": 152,
+   "arquivo": "modelos/ponto_onibus.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     1.2,
+     0
+    ],
+    "meia": [
+     1.55,
+     1.2,
+     0.7
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/ponto_onibus.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "bicicletario",
+   "nome": "Bicicletário",
+   "categoria": "cidade",
+   "material": "metal",
+   "massa": 30,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "cidade",
+    "concessionaria"
+   ],
+   "dimensoes": [
+    1.7,
+    0.724,
+    0.648
+   ],
+   "triangulos": 252,
+   "arquivo": "modelos/bicicletario.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.3619,
+     0
+    ],
+    "meia": [
+     0.85,
+     0.3619,
+     0.3238
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/bicicletario.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "grade_obra",
+   "nome": "Grade de obra",
+   "categoria": "cidade",
+   "material": "metal",
+   "massa": 18,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "cidade",
+    "apoio",
+    "corrida"
+   ],
+   "dimensoes": [
+    2.15,
+    2,
+    0.6
+   ],
+   "triangulos": 316,
+   "arquivo": "modelos/grade_obra.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     1,
+     0
+    ],
+    "meia": [
+     1.075,
+     1,
+     0.3
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/grade_obra.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "orelhao",
+   "nome": "Cabine de telefone",
+   "categoria": "cidade",
+   "material": "plastico",
+   "massa": 50,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": false,
+   "usos": [
+    "cidade"
+   ],
+   "dimensoes": [
+    0.927,
+    2.2,
+    0.835
+   ],
+   "triangulos": 224,
+   "arquivo": "modelos/orelhao.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     1.1,
+     0
+    ],
+    "meia": [
+     0.4636,
+     1.1,
+     0.4173
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/orelhao.jpg",
+   "textura": "texturas/prop_plastico.png"
+  },
+  {
+   "id": "carrinho_compras",
+   "nome": "Carrinho de compras",
+   "categoria": "cidade",
+   "material": "metal",
+   "massa": 14,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "cidade"
+   ],
+   "dimensoes": [
+    0.56,
+    0.987,
+    0.937
+   ],
+   "triangulos": 324,
+   "arquivo": "modelos/carrinho_compras.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.4517,
+     -0.0565
+    ],
+    "meia": [
+     0.28,
+     0.4933,
+     0.4685
+    ]
+   },
+   "pedacos": [],
+   "previa": "previas/carrinho_compras.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "parquimetro",
+   "nome": "Parquímetro",
+   "categoria": "cidade",
+   "material": "metal",
+   "massa": 25,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "cidade"
+   ],
+   "dimensoes": [
+    0.24,
+    1.37,
+    0.206
+   ],
+   "triangulos": 92,
+   "arquivo": "modelos/parquimetro.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.7,
+     0
+    ],
+    "raio": 0.12,
+    "meiaAltura": 0.7
+   },
+   "pedacos": [],
+   "previa": "previas/parquimetro.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "caixote_feira",
+   "nome": "Caixote de feira com frutas",
+   "categoria": "cidade",
+   "material": "madeira",
+   "massa": 9,
+   "quebra": true,
+   "resistencia": 27,
+   "pecas": 5,
+   "voa": true,
+   "usos": [
+    "cidade",
+    "corrida"
+   ],
+   "dimensoes": [
+    0.55,
+    0.335,
+    0.36
+   ],
+   "triangulos": 652,
+   "arquivo": "modelos/caixote_feira.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.1675,
+     0
+    ],
+    "meia": [
+     0.275,
+     0.1675,
+     0.18
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      0.15,
+      0.1525
+     ],
+     "meia": [
+      0.275,
+      0.15,
+      0.0275
+     ],
+     "triangulos": 112,
+     "massa": 1.088
+    },
+    {
+     "centro": [
+      0,
+      0.15,
+      -0.1525
+     ],
+     "meia": [
+      0.275,
+      0.15,
+      0.0275
+     ],
+     "triangulos": 112,
+     "massa": 1.088
+    },
+    {
+     "centro": [
+      -0.2625,
+      0.15,
+      0
+     ],
+     "meia": [
+      0.0125,
+      0.1425,
+      0.155
+     ],
+     "triangulos": 88,
+     "massa": 0.265
+    },
+    {
+     "centro": [
+      0.2625,
+      0.15,
+      0
+     ],
+     "meia": [
+      0.0125,
+      0.1425,
+      0.155
+     ],
+     "triangulos": 88,
+     "massa": 0.265
+    },
+    {
+     "centro": [
+      0,
+      0.1675,
+      0
+     ],
+     "meia": [
+      0.25,
+      0.1675,
+      0.1568
+     ],
+     "triangulos": 252,
+     "massa": 6.295
+    }
+   ],
+   "previa": "previas/caixote_feira.jpg",
+   "textura": "texturas/prop_madeira.png"
+  },
+  {
+   "id": "barril_madeira",
+   "nome": "Barril de madeira",
+   "categoria": "cidade",
+   "material": "madeira",
+   "massa": 50,
+   "quebra": true,
+   "resistencia": 250,
+   "pecas": 4,
+   "voa": false,
+   "usos": [
+    "cidade",
+    "corrida",
+    "apoio"
+   ],
+   "dimensoes": [
+    0.599,
+    0.9,
+    0.599
+   ],
+   "triangulos": 216,
+   "arquivo": "modelos/barril_madeira.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.45,
+     0
+    ],
+    "raio": 0.3,
+    "meiaAltura": 0.45
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.1207,
+      0.45,
+      0.1293
+     ],
+     "meia": [
+      0.1787,
+      0.45,
+      0.1637
+     ],
+     "triangulos": 102,
+     "massa": 11.908
+    },
+    {
+     "centro": [
+      -0.0975,
+      0.45,
+      -0.1563
+     ],
+     "meia": [
+      0.202,
+      0.45,
+      0.1432
+     ],
+     "triangulos": 110,
+     "massa": 11.772
+    },
+    {
+     "centro": [
+      0.0788,
+      0.45,
+      0.1311
+     ],
+     "meia": [
+      0.2207,
+      0.45,
+      0.1683
+     ],
+     "triangulos": 122,
+     "massa": 15.122
+    },
+    {
+     "centro": [
+      0.1055,
+      0.45,
+      -0.1576
+     ],
+     "meia": [
+      0.1939,
+      0.45,
+      0.1418
+     ],
+     "triangulos": 94,
+     "massa": 11.198
+    }
+   ],
+   "previa": "previas/barril_madeira.jpg",
+   "textura": "texturas/prop_madeira.png"
+  },
+  {
+   "id": "engradado_garrafas",
+   "nome": "Engradado de garrafas",
+   "categoria": "cidade",
+   "material": "vidro",
+   "massa": 14,
+   "quebra": true,
+   "resistencia": 42,
+   "pecas": 4,
+   "voa": true,
+   "usos": [
+    "cidade",
+    "apoio"
+   ],
+   "dimensoes": [
+    0.5,
+    0.43,
+    0.34
+   ],
+   "triangulos": 620,
+   "arquivo": "modelos/engradado_garrafas.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.215,
+     0
+    ],
+    "meia": [
+     0.25,
+     0.215,
+     0.17
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.1173,
+      0.215,
+      0.0795
+     ],
+     "meia": [
+      0.1327,
+      0.215,
+      0.0905
+     ],
+     "triangulos": 142,
+     "massa": 3.057
+    },
+    {
+     "centro": [
+      -0.1221,
+      0.215,
+      -0.0469
+     ],
+     "meia": [
+      0.1279,
+      0.215,
+      0.1231
+     ],
+     "triangulos": 230,
+     "massa": 4.009
+    },
+    {
+     "centro": [
+      0.1243,
+      0.215,
+      0.0497
+     ],
+     "meia": [
+      0.1257,
+      0.215,
+      0.1203
+     ],
+     "triangulos": 226,
+     "massa": 3.85
+    },
+    {
+     "centro": [
+      0.1194,
+      0.215,
+      -0.0772
+     ],
+     "meia": [
+      0.1306,
+      0.215,
+      0.0928
+     ],
+     "triangulos": 198,
+     "massa": 3.085
+    }
+   ],
+   "previa": "previas/engradado_garrafas.jpg",
+   "textura": "texturas/prop_vidro.png"
+  },
+  {
+   "id": "painel_vidro",
+   "nome": "Painel de vidro no cavalete",
+   "categoria": "cidade",
+   "material": "vidro",
+   "massa": 22,
+   "quebra": true,
+   "resistencia": 44,
+   "pecas": 4,
+   "voa": true,
+   "usos": [
+    "cidade",
+    "apoio"
+   ],
+   "dimensoes": [
+    1.25,
+    1.407,
+    0.727
+   ],
+   "triangulos": 88,
+   "arquivo": "modelos/painel_vidro.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.7,
+     0
+    ],
+    "meia": [
+     0.625,
+     0.7034,
+     0.3637
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.3274,
+      0.4219,
+      0
+     ],
+     "meia": [
+      0.2976,
+      0.4253,
+      0.3637
+     ],
+     "triangulos": 52,
+     "massa": 6.931
+    },
+    {
+     "centro": [
+      -0.2758,
+      1.0514,
+      -0.0108
+     ],
+     "meia": [
+      0.3242,
+      0.3521,
+      0.1667
+     ],
+     "triangulos": 40,
+     "massa": 2.865
+    },
+    {
+     "centro": [
+      0.2636,
+      0.3492,
+      0
+     ],
+     "meia": [
+      0.3614,
+      0.3526,
+      0.3637
+     ],
+     "triangulos": 52,
+     "massa": 6.977
+    },
+    {
+     "centro": [
+      0.284,
+      0.9331,
+      -0.0152
+     ],
+     "meia": [
+      0.316,
+      0.4703,
+      0.2337
+     ],
+     "triangulos": 40,
+     "massa": 5.228
+    }
+   ],
+   "previa": "previas/painel_vidro.jpg",
+   "textura": "texturas/prop_vidro.png"
+  },
+  {
+   "id": "vaso_ceramica",
+   "nome": "Vaso de cerâmica",
+   "categoria": "cidade",
+   "material": "concreto",
+   "massa": 18,
+   "quebra": true,
+   "resistencia": 54,
+   "pecas": 4,
+   "voa": true,
+   "usos": [
+    "cidade",
+    "concessionaria"
+   ],
+   "dimensoes": [
+    0.457,
+    0.838,
+    0.48
+   ],
+   "triangulos": 120,
+   "arquivo": "modelos/vaso_ceramica.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     0.3,
+     0
+    ],
+    "raio": 0.24,
+    "meiaAltura": 0.3
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.0786,
+      0.3838,
+      0.0603
+     ],
+     "meia": [
+      0.1497,
+      0.3838,
+      0.1797
+     ],
+     "triangulos": 104,
+     "massa": 4.921
+    },
+    {
+     "centro": [
+      -0.0769,
+      0.4192,
+      -0.0564
+     ],
+     "meia": [
+      0.1408,
+      0.4192,
+      0.1717
+     ],
+     "triangulos": 92,
+     "massa": 4.831
+    },
+    {
+     "centro": [
+      0.1019,
+      0.3741,
+      0.0559
+     ],
+     "meia": [
+      0.1264,
+      0.3741,
+      0.1648
+     ],
+     "triangulos": 74,
+     "massa": 3.714
+    },
+    {
+     "centro": [
+      0.0959,
+      0.4043,
+      -0.0622
+     ],
+     "meia": [
+      0.1323,
+      0.4043,
+      0.1778
+     ],
+     "triangulos": 98,
+     "massa": 4.535
+    }
+   ],
+   "previa": "previas/vaso_ceramica.jpg",
+   "textura": "texturas/prop_concreto.png"
+  }
+ ]
+}
