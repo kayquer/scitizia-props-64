@@ -1,20 +1,20 @@
-# Scitizia: 140 props low poly em glTF/GLB com visual retrô de 64 bits
+# Scitizia: 142 props low poly em glTF/GLB com visual retrô de 64 bits
 
-![Mosaico com os 140 props low poly: cones, fardos de feno, pneus, placas de curva, cercas, caixas, paletes, arvoretas, pedras, ferramentas, cadeiras, móveis de loja, bancos, postes e hidrantes](docs/props-low-poly-64-bits.jpg)
+![Mosaico com os 142 props low poly: cones, fardos de feno, pneus, placas de curva, cercas, caixas, paletes, arvoretas, pedras, ferramentas, cadeiras, móveis de loja, bancos, postes e hidrantes](docs/props-low-poly-64-bits.jpg)
 
-**Scitizia: props 64 bits** é uma coleção gratuita de 140 objetos de cenário em baixo polígono (low poly), com o visual retrô dos consoles de 64 bits, prontos para jogos em tempo real: beira de estrada de rali, parque de apoio da equipe, concessionária e cidade. Cada prop é um arquivo glTF 2.0 binário (`.glb`) de 6,0 a 144,7 KB, com 20 a 1.408 triângulos (218 em média), cor por vértice e uma textura pequena de 64×64 px por material, com filtro bilinear. 67 deles quebram: o mesmo arquivo traz o objeto inteiro e os pedaços pré-fraturados, e o catálogo traz massa, resistência ao impacto, colisor e os pedaços de cada um, para a física do seu jogo derrubar, arremessar e quebrar os objetos. Os props foram feitos para o jogo **Scitizia Rally Championship**; tudo é genérico, sem marca, logotipo ou texto de empresa real.
+**Scitizia: props 64 bits** é uma coleção gratuita de 142 objetos de cenário em baixo polígono (low poly), com o visual retrô dos consoles de 64 bits, prontos para jogos em tempo real: beira de estrada de rali, parque de apoio da equipe, concessionária e cidade. Cada prop é um arquivo glTF 2.0 binário (`.glb`) de 6,0 a 144,7 KB, com 20 a 1.408 triângulos (216 em média), cor por vértice e uma textura pequena de 64×64 px por material, com filtro bilinear. 69 deles quebram: o mesmo arquivo traz o objeto inteiro e os pedaços pré-fraturados, e o catálogo traz massa, resistência ao impacto, colisor e os pedaços de cada um, para a física do seu jogo derrubar, arremessar e quebrar os objetos. Os props foram feitos para o jogo **Scitizia Rally Championship**; tudo é genérico, sem marca, logotipo ou texto de empresa real.
 
-**English summary:** Scitizia 64-bit props is a free collection of 140 low-poly scenery objects with a retro 64-bit console look: rally roadside (cones, hay bales, tyre stacks, wooden marker posts, chevron signs, fences, barriers, crates, saplings, logs, rocks), service park, car dealership and town props. Every prop is a binary glTF 2.0 (`.glb`) file with 20 to 1408 triangles, vertex colors and one small 64×64 texture per material. 67 props are breakable: each file holds the whole object (`Inteiro`) and pre-fractured pieces (`Peca_00`, `Peca_01`...), and [`catalogo.json`](catalogo.json) lists mass, break impulse, a simple collider and the pieces of every prop, ready for a physics engine. Units are meters, Y is up, the front faces +Z and the origin sits on the ground. Public domain (CC0 1.0).
+**English summary:** Scitizia 64-bit props is a free collection of 142 low-poly scenery objects with a retro 64-bit console look: rally roadside (cones, hay bales, tyre stacks, wooden marker posts, chevron signs, fences, barriers, crates, saplings, logs, rocks), service park, car dealership and town props. Every prop is a binary glTF 2.0 (`.glb`) file with 20 to 1408 triangles, vertex colors and one small 64×64 texture per material. 69 props are breakable: each file holds the whole object (`Inteiro`) and pre-fractured pieces (`Peca_00`, `Peca_01`...), and [`catalogo.json`](catalogo.json) lists mass, break impulse, a simple collider and the pieces of every prop, ready for a physics engine. Units are meters, Y is up, the front faces +Z and the origin sits on the ground. Public domain (CC0 1.0).
 
 ## Resumo
 
 | | |
 |---|---|
-| Props | 140: corrida e beira de estrada 73, parque de apoio 26, concessionária 17, cidade 24 |
+| Props | 142: corrida e beira de estrada 75, parque de apoio 26, concessionária 17, cidade 24 |
 | Formato | glTF 2.0 binário (`.glb`), texturas também em PNG |
-| Triângulos por prop | 20 a 1.408 (média 218) |
-| Quebráveis | 67, com 2 a 7 pedaços pré-fraturados |
-| Materiais | metal 41, madeira 28, plástico 23, vegetal 10, tecido 9, borracha 7, concreto 7, palha 4, pedra 4, vidro 4, papelão 3 |
+| Triângulos por prop | 20 a 1.408 (média 216) |
+| Quebráveis | 69, com 2 a 7 pedaços pré-fraturados |
+| Materiais | metal 41, madeira 30, plástico 23, vegetal 10, tecido 9, borracha 7, concreto 7, palha 4, pedra 4, vidro 4, papelão 3 |
 | Texturas | uma por material, 64×64 px, em tons de cinza (a cor vem da cor por vértice) |
 | Escala e eixos | metros, Y para cima, frente em +Z, origem no chão, no centro |
 | Objetos | `Inteiro` (o prop montado) e, nos quebráveis, `Peca_00`, `Peca_01`... |
@@ -23,7 +23,7 @@
 
 ## Corrida e beira de estrada
 
-Cones, fardos de feno, pneus, madeiras-guia, placas de curva, balizas de quilometragem, cercas, barreiras, tambores, caixas, paletes, arvoretas, arbustos, toras e pedras: o que fica na beira de um estágio de rali e pode ser atropelado. 73 props.
+Cones, fardos de feno, pneus, madeiras-guia, placas de curva, balizas de quilometragem, cercas, barreiras, tambores, caixas, paletes, arvoretas, arbustos, toras e pedras: o que fica na beira de um estágio de rali e pode ser atropelado. 75 props.
 
 | Prévia | Prop | Material | Massa | Quebra | Voa | Triângulos | Onde serve |
 |---|---|---|---|---|---|---|---|
@@ -41,6 +41,8 @@ Cones, fardos de feno, pneus, madeiras-guia, placas de curva, balizas de quilome
 | ![Madeira-guia, prop low poly de madeira](previas/estaca_guia.jpg) | **Madeira-guia**<br>`estaca_guia` | madeira | 6,0 kg | sim, 3 pedaços (21 N·s) | sim | 76 | corrida |
 | ![Madeira-guia pintada, prop low poly de madeira](previas/estaca_guia_branca.jpg) | **Madeira-guia pintada**<br>`estaca_guia_branca` | madeira | 6,0 kg | sim, 2 pedaços (21 N·s) | sim | 68 | corrida, cidade |
 | ![Estaca de neve, prop low poly de plástico](previas/estaca_neve.jpg) | **Estaca de neve**<br>`estaca_neve` | plástico | 2,0 kg | sim, 2 pedaços (12 N·s) | sim | 72 | corrida |
+| ![Baliza vermelha, prop low poly de madeira](previas/baliza_vermelha.jpg) | **Baliza vermelha**<br>`baliza_vermelha` | madeira | 4,0 kg | sim, 2 pedaços (14 N·s) | sim | 44 | corrida |
+| ![Baliza branca, prop low poly de madeira](previas/baliza_branca.jpg) | **Baliza branca**<br>`baliza_branca` | madeira | 4,0 kg | sim, 2 pedaços (14 N·s) | sim | 44 | corrida |
 | ![Placa de curva à esquerda, prop low poly de madeira](previas/placa_chevron_esq.jpg) | **Placa de curva à esquerda**<br>`placa_chevron_esq` | madeira | 18 kg | sim, 4 pedaços (54 N·s) | sim | 216 | corrida |
 | ![Placa de curva à direita, prop low poly de madeira](previas/placa_chevron_dir.jpg) | **Placa de curva à direita**<br>`placa_chevron_dir` | madeira | 18 kg | sim, 4 pedaços (54 N·s) | sim | 216 | corrida |
 | ![Placa larga de curva, prop low poly de madeira](previas/placa_chevron_tripla.jpg) | **Placa larga de curva**<br>`placa_chevron_tripla` | madeira | 32 kg | sim, 5 pedaços (96 N·s) | sim | 280 | corrida |

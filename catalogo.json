@@ -1034,6 +1034,138 @@
    "textura": "texturas/prop_plastico.png"
   },
   {
+   "id": "baliza_vermelha",
+   "nome": "Baliza vermelha",
+   "categoria": "corrida",
+   "material": "madeira",
+   "massa": 4,
+   "quebra": true,
+   "resistencia": 14,
+   "pecas": 2,
+   "voa": true,
+   "usos": [
+    "corrida"
+   ],
+   "dimensoes": [
+    0.12,
+    0.9,
+    0.12
+   ],
+   "triangulos": 44,
+   "arquivo": "modelos/baliza_vermelha.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.45,
+     0
+    ],
+    "meia": [
+     0.06,
+     0.45,
+     0.06
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      0.2252,
+      0
+     ],
+     "meia": [
+      0.06,
+      0.2252,
+      0.06
+     ],
+     "triangulos": 36,
+     "massa": 1.942
+    },
+    {
+     "centro": [
+      0,
+      0.6613,
+      0
+     ],
+     "meia": [
+      0.06,
+      0.2387,
+      0.06
+     ],
+     "triangulos": 36,
+     "massa": 2.058
+    }
+   ],
+   "previa": "previas/baliza_vermelha.jpg",
+   "textura": "texturas/prop_madeira.png"
+  },
+  {
+   "id": "baliza_branca",
+   "nome": "Baliza branca",
+   "categoria": "corrida",
+   "material": "madeira",
+   "massa": 4,
+   "quebra": true,
+   "resistencia": 14,
+   "pecas": 2,
+   "voa": true,
+   "usos": [
+    "corrida"
+   ],
+   "dimensoes": [
+    0.12,
+    0.9,
+    0.12
+   ],
+   "triangulos": 44,
+   "arquivo": "modelos/baliza_branca.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.45,
+     0
+    ],
+    "meia": [
+     0.06,
+     0.45,
+     0.06
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      0.2607,
+      0
+     ],
+     "meia": [
+      0.06,
+      0.2607,
+      0.06
+     ],
+     "triangulos": 36,
+     "massa": 2.216
+    },
+    {
+     "centro": [
+      0,
+      0.6901,
+      0
+     ],
+     "meia": [
+      0.06,
+      0.2099,
+      0.06
+     ],
+     "triangulos": 36,
+     "massa": 1.784
+    }
+   ],
+   "previa": "previas/baliza_branca.jpg",
+   "textura": "texturas/prop_madeira.png"
+  },
+  {
    "id": "placa_chevron_esq",
    "nome": "Placa de curva à esquerda",
    "categoria": "corrida",
