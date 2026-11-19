@@ -2,6 +2,8 @@
 
 ![Mosaico com os 142 props low poly: cones, fardos de feno, pneus, placas de curva, cercas, caixas, paletes, arvoretas, pedras, ferramentas, cadeiras, móveis de loja, bancos, postes e hidrantes](docs/props-low-poly-64-bits.jpg)
 
+https://github.com/user-attachments/assets/b5d738ac-eb3c-40ea-8ed1-9341df787d7e
+
 ▶️ **[Assista ao vídeo no YouTube](https://www.youtube.com/watch?v=5mKvgGSDqMs)** · **[Baixe no itch.io](https://kkyqr.itch.io/scitizia-props-64)** (grátis, doação opcional)
 
 **Scitizia: props 64 bits** é uma coleção gratuita de 142 objetos de cenário em baixo polígono (low poly), com o visual retrô dos consoles de 64 bits, prontos para jogos em tempo real: beira de estrada de rali, parque de apoio da equipe, concessionária e cidade. Cada prop é um arquivo glTF 2.0 binário (`.glb`) de 6,0 a 144,7 KB, com 20 a 1.408 triângulos (216 em média), cor por vértice e uma textura pequena de 64×64 px por material, com filtro bilinear. 69 deles quebram: o mesmo arquivo traz o objeto inteiro e os pedaços pré-fraturados, e o catálogo traz massa, resistência ao impacto, colisor e os pedaços de cada um, para a física do seu jogo derrubar, arremessar e quebrar os objetos. Os props foram feitos para o jogo **Scitizia Rally Championship**; tudo é genérico, sem marca, logotipo ou texto de empresa real.
