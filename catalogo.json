@@ -9,7 +9,8 @@
   "voa": "leve o bastante para sair voando quando um carro bate",
   "dimensoes": "largura (X), altura (Y), profundidade (Z) em metros",
   "colisor": "forma simples para a física (caixa, cilindro ou esfera), no espaço do prop",
-  "pedacos": "centro, meias medidas e massa de cada pedaço, para criar os corpos quando o prop quebra"
+  "pedacos": "centro, meias medidas e massa de cada pedaço, para criar os corpos quando o prop quebra",
+  "fixo": "só nos fincados no chão (poste de telégrafo): corpo fixo, não se mexe nem quebra"
  },
  "props": [
   {
@@ -8845,6 +8846,971 @@
    ],
    "previa": "previas/vaso_ceramica.jpg",
    "textura": "texturas/prop_concreto.png"
+  },
+  {
+   "id": "guard_rail",
+   "nome": "Defensa metálica",
+   "categoria": "corrida",
+   "material": "metal",
+   "massa": 600,
+   "quebra": true,
+   "resistencia": 4200,
+   "pecas": 3,
+   "voa": false,
+   "usos": [
+    "corrida",
+    "cidade"
+   ],
+   "dimensoes": [
+    4,
+    1.28,
+    0.26
+   ],
+   "triangulos": 140,
+   "arquivo": "modelos/guard_rail.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.39,
+     -0.045
+    ],
+    "meia": [
+     2,
+     0.39,
+     0.13
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      0.55,
+      0.0465
+     ],
+     "meia": [
+      2,
+      0.155,
+      0.0385
+     ],
+     "triangulos": 68,
+     "massa": 358.642
+    },
+    {
+     "centro": [
+      -1,
+      0.14,
+      -0.0495
+     ],
+     "meia": [
+      0.05,
+      0.64,
+      0.1255
+     ],
+     "triangulos": 36,
+     "massa": 120.679
+    },
+    {
+     "centro": [
+      1,
+      0.14,
+      -0.0495
+     ],
+     "meia": [
+      0.05,
+      0.64,
+      0.1255
+     ],
+     "triangulos": 36,
+     "massa": 120.679
+    }
+   ],
+   "previa": "previas/guard_rail.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "guard_rail_ponta",
+   "nome": "Ponta de defensa metálica",
+   "categoria": "corrida",
+   "material": "metal",
+   "massa": 200,
+   "quebra": true,
+   "resistencia": 1400,
+   "pecas": 3,
+   "voa": false,
+   "usos": [
+    "corrida",
+    "cidade"
+   ],
+   "dimensoes": [
+    1.65,
+    1.28,
+    0.335
+   ],
+   "triangulos": 220,
+   "arquivo": "modelos/guard_rail_ponta.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0.025,
+     0.39,
+     -0.0075
+    ],
+    "meia": [
+     0.825,
+     0.39,
+     0.1675
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.06,
+      0.37,
+      0.0465
+     ],
+     "meia": [
+      0.74,
+      0.335,
+      0.0385
+     ],
+     "triangulos": 140,
+     "massa": 122.047
+    },
+    {
+     "centro": [
+      -0.45,
+      0.14,
+      -0.0495
+     ],
+     "meia": [
+      0.05,
+      0.64,
+      0.1255
+     ],
+     "triangulos": 36,
+     "massa": 51.355
+    },
+    {
+     "centro": [
+      0.72,
+      0.1,
+      0
+     ],
+     "meia": [
+      0.13,
+      0.1,
+      0.16
+     ],
+     "triangulos": 44,
+     "massa": 26.598
+    }
+   ],
+   "previa": "previas/guard_rail_ponta.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "painel_seta_luminosa",
+   "nome": "Carreta com painel de seta luminosa",
+   "categoria": "corrida",
+   "material": "metal",
+   "massa": 350,
+   "quebra": true,
+   "resistencia": 2800,
+   "pecas": 2,
+   "voa": false,
+   "usos": [
+    "corrida",
+    "cidade",
+    "apoio"
+   ],
+   "dimensoes": [
+    1.8,
+    3.074,
+    1.81
+   ],
+   "triangulos": 350,
+   "arquivo": "modelos/painel_seta_luminosa.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     1.5369,
+     -0.505
+    ],
+    "meia": [
+     0.9,
+     1.5369,
+     0.905
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0.035,
+      0.34,
+      -0.505
+     ],
+     "meia": [
+      0.825,
+      0.34,
+      0.905
+     ],
+     "triangulos": 240,
+     "massa": 169.256
+    },
+    {
+     "centro": [
+      0,
+      1.8369,
+      -0.1715
+     ],
+     "meia": [
+      0.9,
+      1.2369,
+      0.2435
+     ],
+     "triangulos": 110,
+     "massa": 180.744
+    }
+   ],
+   "previa": "previas/painel_seta_luminosa.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "placa_obra_desvio",
+   "nome": "Placa de desvio de obra",
+   "categoria": "corrida",
+   "material": "metal",
+   "massa": 14,
+   "quebra": true,
+   "resistencia": 140,
+   "pecas": 2,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "cidade"
+   ],
+   "dimensoes": [
+    1,
+    1.75,
+    0.096
+   ],
+   "triangulos": 128,
+   "arquivo": "modelos/placa_obra_desvio.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     0.875,
+     -0.012
+    ],
+    "meia": [
+     0.5,
+     0.875,
+     0.048
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      0.875,
+      -0.03
+     ],
+     "meia": [
+      0.406,
+      0.875,
+      0.03
+     ],
+     "triangulos": 48,
+     "massa": 10.945
+    },
+    {
+     "centro": [
+      0,
+      1.4,
+      0.019
+     ],
+     "meia": [
+      0.5,
+      0.35,
+      0.017
+     ],
+     "triangulos": 80,
+     "massa": 3.055
+    }
+   ],
+   "previa": "previas/placa_obra_desvio.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "placa_ferrovia",
+   "nome": "Cruz de passagem de nível",
+   "categoria": "corrida",
+   "material": "metal",
+   "massa": 15,
+   "quebra": true,
+   "resistencia": 150,
+   "pecas": 2,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "cidade"
+   ],
+   "dimensoes": [
+    1.112,
+    2.844,
+    0.133
+   ],
+   "triangulos": 72,
+   "arquivo": "modelos/placa_ferrovia.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     1.4218,
+     -0.0035
+    ],
+    "meia": [
+     0.5559,
+     1.4218,
+     0.0665
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      1.375,
+      -0.03
+     ],
+     "meia": [
+      0.0346,
+      1.375,
+      0.04
+     ],
+     "triangulos": 24,
+     "massa": 3.938
+    },
+    {
+     "centro": [
+      0,
+      2.35,
+      0.0435
+     ],
+     "meia": [
+      0.5559,
+      0.4937,
+      0.0195
+     ],
+     "triangulos": 48,
+     "massa": 11.062
+    }
+   ],
+   "previa": "previas/placa_ferrovia.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "placa_cruzamento_trem",
+   "nome": "Placa de cruzamento com trem",
+   "categoria": "corrida",
+   "material": "metal",
+   "massa": 12,
+   "quebra": true,
+   "resistencia": 120,
+   "pecas": 2,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "cidade"
+   ],
+   "dimensoes": [
+    0.76,
+    2.23,
+    0.099
+   ],
+   "triangulos": 172,
+   "arquivo": "modelos/placa_cruzamento_trem.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     1.115,
+     -0.0155
+    ],
+    "meia": [
+     0.38,
+     1.115,
+     0.0495
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      1.05,
+      -0.03
+     ],
+     "meia": [
+      0.0303,
+      1.05,
+      0.035
+     ],
+     "triangulos": 24,
+     "massa": 4.696
+    },
+    {
+     "centro": [
+      0,
+      1.85,
+      0.022
+     ],
+     "meia": [
+      0.38,
+      0.38,
+      0.012
+     ],
+     "triangulos": 148,
+     "massa": 7.304
+    }
+   ],
+   "previa": "previas/placa_cruzamento_trem.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "placa_declive",
+   "nome": "Placa de descida íngreme",
+   "categoria": "corrida",
+   "material": "metal",
+   "massa": 12,
+   "quebra": true,
+   "resistencia": 120,
+   "pecas": 2,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "cidade"
+   ],
+   "dimensoes": [
+    0.8,
+    2.312,
+    0.105
+   ],
+   "triangulos": 60,
+   "arquivo": "modelos/placa_declive.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     1.1559,
+     -0.0125
+    ],
+    "meia": [
+     0.4,
+     1.1559,
+     0.0525
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      1.05,
+      -0.03
+     ],
+     "meia": [
+      0.0303,
+      1.05,
+      0.035
+     ],
+     "triangulos": 24,
+     "massa": 4.187
+    },
+    {
+     "centro": [
+      0,
+      1.9655,
+      0.025
+     ],
+     "meia": [
+      0.4,
+      0.3464,
+      0.015
+     ],
+     "triangulos": 36,
+     "massa": 7.813
+    }
+   ],
+   "previa": "previas/placa_declive.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "placa_estreitamento",
+   "nome": "Placa de pista estreita",
+   "categoria": "corrida",
+   "material": "metal",
+   "massa": 12,
+   "quebra": true,
+   "resistencia": 120,
+   "pecas": 2,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "cidade"
+   ],
+   "dimensoes": [
+    0.8,
+    2.312,
+    0.105
+   ],
+   "triangulos": 96,
+   "arquivo": "modelos/placa_estreitamento.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     1.1559,
+     -0.0125
+    ],
+    "meia": [
+     0.4,
+     1.1559,
+     0.0525
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      1.05,
+      -0.03
+     ],
+     "meia": [
+      0.0303,
+      1.05,
+      0.035
+     ],
+     "triangulos": 24,
+     "massa": 4.187
+    },
+    {
+     "centro": [
+      0,
+      1.9655,
+      0.025
+     ],
+     "meia": [
+      0.4,
+      0.3464,
+      0.015
+     ],
+     "triangulos": 72,
+     "massa": 7.813
+    }
+   ],
+   "previa": "previas/placa_estreitamento.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "placa_agua_pista",
+   "nome": "Placa de pista escorregadia",
+   "categoria": "corrida",
+   "material": "metal",
+   "massa": 12,
+   "quebra": true,
+   "resistencia": 120,
+   "pecas": 2,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "cidade"
+   ],
+   "dimensoes": [
+    0.72,
+    2.21,
+    0.095
+   ],
+   "triangulos": 136,
+   "arquivo": "modelos/placa_agua_pista.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0,
+     1.105,
+     -0.0175
+    ],
+    "meia": [
+     0.36,
+     1.105,
+     0.0475
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      0,
+      1.05,
+      -0.03
+     ],
+     "meia": [
+      0.0303,
+      1.05,
+      0.035
+     ],
+     "triangulos": 24,
+     "massa": 5.547
+    },
+    {
+     "centro": [
+      0,
+      1.85,
+      0.02
+     ],
+     "meia": [
+      0.36,
+      0.36,
+      0.01
+     ],
+     "triangulos": 112,
+     "massa": 6.453
+    }
+   ],
+   "previa": "previas/placa_agua_pista.jpg",
+   "textura": "texturas/prop_metal.png"
+  },
+  {
+   "id": "rolo_capim_seco",
+   "nome": "Rolo de capim seco",
+   "categoria": "corrida",
+   "material": "vegetal",
+   "massa": 1.5,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": true,
+   "usos": [
+    "corrida"
+   ],
+   "dimensoes": [
+    0.684,
+    0.634,
+    0.664
+   ],
+   "triangulos": 356,
+   "arquivo": "modelos/rolo_capim_seco.glb",
+   "colisor": {
+    "forma": "esfera",
+    "centro": [
+     0,
+     0.38,
+     0
+    ],
+    "raio": 0.36
+   },
+   "pedacos": [],
+   "previa": "previas/rolo_capim_seco.jpg",
+   "textura": "texturas/prop_vegetal.png"
+  },
+  {
+   "id": "samambaia",
+   "nome": "Samambaia grande",
+   "categoria": "corrida",
+   "material": "vegetal",
+   "massa": 5,
+   "quebra": true,
+   "resistencia": 15,
+   "pecas": 4,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "cidade",
+    "concessionaria"
+   ],
+   "dimensoes": [
+    1.947,
+    0.841,
+    1.825
+   ],
+   "triangulos": 178,
+   "arquivo": "modelos/samambaia.glb",
+   "colisor": {
+    "forma": "esfera",
+    "centro": [
+     0,
+     0.45,
+     0
+    ],
+    "raio": 0.55
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.3751,
+      0.5041,
+      0.5486
+     ],
+     "meia": [
+      0.3638,
+      0.3227,
+      0.5001
+     ],
+     "triangulos": 46,
+     "massa": 1.008
+    },
+    {
+     "centro": [
+      -0.494,
+      0.4073,
+      -0.3323
+     ],
+     "meia": [
+      0.5343,
+      0.4073,
+      0.4438
+     ],
+     "triangulos": 94,
+     "massa": 1.658
+    },
+    {
+     "centro": [
+      0.3148,
+      0.5171,
+      0.463
+     ],
+     "meia": [
+      0.352,
+      0.3238,
+      0.3957
+     ],
+     "triangulos": 48,
+     "massa": 0.775
+    },
+    {
+     "centro": [
+      0.4317,
+      0.4205,
+      -0.3231
+     ],
+     "meia": [
+      0.4874,
+      0.4205,
+      0.4431
+     ],
+     "triangulos": 118,
+     "massa": 1.559
+    }
+   ],
+   "previa": "previas/samambaia.jpg",
+   "textura": "texturas/prop_vegetal.png"
+  },
+  {
+   "id": "touceira_tropical",
+   "nome": "Touceira de folhas largas",
+   "categoria": "corrida",
+   "material": "vegetal",
+   "massa": 8,
+   "quebra": true,
+   "resistencia": 24,
+   "pecas": 4,
+   "voa": true,
+   "usos": [
+    "corrida",
+    "cidade",
+    "concessionaria"
+   ],
+   "dimensoes": [
+    1.869,
+    0.904,
+    1.88
+   ],
+   "triangulos": 182,
+   "arquivo": "modelos/touceira_tropical.glb",
+   "colisor": {
+    "forma": "esfera",
+    "centro": [
+     0,
+     0.6,
+     0
+    ],
+    "raio": 0.6
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.5013,
+      0.4726,
+      0.2386
+     ],
+     "meia": [
+      0.4275,
+      0.4246,
+      0.5014
+     ],
+     "triangulos": 58,
+     "massa": 2.234
+    },
+    {
+     "centro": [
+      -0.3691,
+      0.6736,
+      -0.5463
+     ],
+     "meia": [
+      0.3822,
+      0.2236,
+      0.3936
+     ],
+     "triangulos": 22,
+     "massa": 0.826
+    },
+    {
+     "centro": [
+      0.3264,
+      0.4201,
+      0.4202
+     ],
+     "meia": [
+      0.4973,
+      0.4271,
+      0.5197
+     ],
+     "triangulos": 144,
+     "massa": 2.709
+    },
+    {
+     "centro": [
+      0.4397,
+      0.447,
+      -0.4141
+     ],
+     "meia": [
+      0.5003,
+      0.3502,
+      0.5191
+     ],
+     "triangulos": 66,
+     "massa": 2.232
+    }
+   ],
+   "previa": "previas/touceira_tropical.jpg",
+   "textura": "texturas/prop_vegetal.png"
+  },
+  {
+   "id": "cerca_viva",
+   "nome": "Cerca viva aparada",
+   "categoria": "corrida",
+   "material": "vegetal",
+   "massa": 60,
+   "quebra": true,
+   "resistencia": 150,
+   "pecas": 3,
+   "voa": false,
+   "usos": [
+    "corrida",
+    "cidade"
+   ],
+   "dimensoes": [
+    3.017,
+    1.225,
+    0.764
+   ],
+   "triangulos": 244,
+   "arquivo": "modelos/cerca_viva.glb",
+   "colisor": {
+    "forma": "caixa",
+    "centro": [
+     0.0087,
+     0.6127,
+     0.0319
+    ],
+    "meia": [
+     1.5087,
+     0.6127,
+     0.3819
+    ]
+   },
+   "pedacos": [
+    {
+     "centro": [
+      -0.9828,
+      0.6127,
+      0.0288
+     ],
+     "meia": [
+      0.5172,
+      0.6127,
+      0.3788
+     ],
+     "triangulos": 132,
+     "massa": 18.256
+    },
+    {
+     "centro": [
+      0.0254,
+      0.6007,
+      0.0318
+     ],
+     "meia": [
+      0.5753,
+      0.6007,
+      0.3818
+     ],
+     "triangulos": 156,
+     "massa": 20.062
+    },
+    {
+     "centro": [
+      0.8982,
+      0.6029,
+      0.0319
+     ],
+     "meia": [
+      0.6192,
+      0.6029,
+      0.3819
+     ],
+     "triangulos": 148,
+     "massa": 21.682
+    }
+   ],
+   "previa": "previas/cerca_viva.jpg",
+   "textura": "texturas/prop_vegetal.png"
+  },
+  {
+   "id": "poste_telegrafo",
+   "nome": "Poste de telégrafo",
+   "categoria": "corrida",
+   "material": "madeira",
+   "massa": 400,
+   "quebra": false,
+   "resistencia": null,
+   "pecas": 0,
+   "voa": false,
+   "usos": [
+    "corrida"
+   ],
+   "dimensoes": [
+    1.7,
+    7.06,
+    0.31
+   ],
+   "triangulos": 448,
+   "arquivo": "modelos/poste_telegrafo.glb",
+   "colisor": {
+    "forma": "cilindro",
+    "centro": [
+     0,
+     3.5,
+     0
+    ],
+    "raio": 0.13,
+    "meiaAltura": 3.5
+   },
+   "pedacos": [],
+   "fixo": true,
+   "previa": "previas/poste_telegrafo.jpg",
+   "textura": "texturas/prop_madeira.png"
   }
  ]
 }

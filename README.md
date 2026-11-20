@@ -1,24 +1,24 @@
-# Scitizia: 142 props low poly em glTF/GLB com visual retrô de 64 bits
+# Scitizia: 156 props low poly em glTF/GLB com visual retrô de 64 bits
 
-![Mosaico com os 142 props low poly: cones, fardos de feno, pneus, placas de curva, cercas, caixas, paletes, arvoretas, pedras, ferramentas, cadeiras, móveis de loja, bancos, postes e hidrantes](docs/props-low-poly-64-bits.jpg)
+![Mosaico com os 156 props low poly: cones, fardos de feno, pneus, placas de curva, cercas, caixas, paletes, arvoretas, pedras, ferramentas, cadeiras, móveis de loja, bancos, postes e hidrantes](docs/props-low-poly-64-bits.jpg)
 
 https://github.com/user-attachments/assets/b5d738ac-eb3c-40ea-8ed1-9341df787d7e
 
 ▶️ **[Assista ao vídeo no YouTube](https://www.youtube.com/watch?v=5mKvgGSDqMs)** · **[Baixe no itch.io](https://kkyqr.itch.io/scitizia-props-64)** (grátis, doação opcional)
 
-**Scitizia: props 64 bits** é uma coleção gratuita de 142 objetos de cenário em baixo polígono (low poly), com o visual retrô dos consoles de 64 bits, prontos para jogos em tempo real: beira de estrada de rali, parque de apoio da equipe, concessionária e cidade. Cada prop é um arquivo glTF 2.0 binário (`.glb`) de 6,0 a 144,7 KB, com 20 a 1.408 triângulos (216 em média), cor por vértice e uma textura pequena de 64×64 px por material, com filtro bilinear. 69 deles quebram: o mesmo arquivo traz o objeto inteiro e os pedaços pré-fraturados, e o catálogo traz massa, resistência ao impacto, colisor e os pedaços de cada um, para a física do seu jogo derrubar, arremessar e quebrar os objetos. Os props foram feitos para o jogo **Scitizia Rally Championship**; tudo é genérico, sem marca, logotipo ou texto de empresa real.
+**Scitizia: props 64 bits** é uma coleção gratuita de 156 objetos de cenário em baixo polígono (low poly), com o visual retrô dos consoles de 64 bits, prontos para jogos em tempo real: beira de estrada de rali, parque de apoio da equipe, concessionária e cidade. Cada prop é um arquivo glTF 2.0 binário (`.glb`) de 6,0 a 144,7 KB, com 20 a 1.408 triângulos (214 em média), cor por vértice e uma textura pequena de 64×64 px por material, com filtro bilinear. 81 deles quebram: o mesmo arquivo traz o objeto inteiro e os pedaços pré-fraturados, e o catálogo traz massa, resistência ao impacto, colisor e os pedaços de cada um, para a física do seu jogo derrubar, arremessar e quebrar os objetos. Os props foram feitos para o jogo **Scitizia Rally Championship**; tudo é genérico, sem marca, logotipo ou texto de empresa real.
 
-**English summary:** Scitizia 64-bit props is a free collection of 142 low-poly scenery objects with a retro 64-bit console look: rally roadside (cones, hay bales, tyre stacks, wooden marker posts, chevron signs, fences, barriers, crates, saplings, logs, rocks), service park, car dealership and town props. Every prop is a binary glTF 2.0 (`.glb`) file with 20 to 1408 triangles, vertex colors and one small 64×64 texture per material. 69 props are breakable: each file holds the whole object (`Inteiro`) and pre-fractured pieces (`Peca_00`, `Peca_01`...), and [`catalogo.json`](catalogo.json) lists mass, break impulse, a simple collider and the pieces of every prop, ready for a physics engine. Units are meters, Y is up, the front faces +Z and the origin sits on the ground. Public domain (CC0 1.0).
+**English summary:** Scitizia 64-bit props is a free collection of 156 low-poly scenery objects with a retro 64-bit console look: rally roadside (cones, hay bales, tyre stacks, wooden marker posts, chevron and warning signs, fences, hedges, steel guard rails, roadworks and level crossing signs, telegraph poles, barriers, crates, saplings, ferns, tumbleweeds, logs, rocks), service park, car dealership and town props. Every prop is a binary glTF 2.0 (`.glb`) file with 20 to 1408 triangles, vertex colors and one small 64×64 texture per material. 81 props are breakable: each file holds the whole object (`Inteiro`) and pre-fractured pieces (`Peca_00`, `Peca_01`...), and [`catalogo.json`](catalogo.json) lists mass, break impulse, a simple collider and the pieces of every prop, ready for a physics engine. Units are meters, Y is up, the front faces +Z and the origin sits on the ground. Public domain (CC0 1.0).
 
 ## Resumo
 
 | | |
 |---|---|
-| Props | 142: corrida e beira de estrada 75, parque de apoio 26, concessionária 17, cidade 24 |
+| Props | 156: corrida e beira de estrada 89, parque de apoio 26, concessionária 17, cidade 24 |
 | Formato | glTF 2.0 binário (`.glb`), texturas também em PNG |
-| Triângulos por prop | 20 a 1.408 (média 216) |
-| Quebráveis | 69, com 2 a 7 pedaços pré-fraturados |
-| Materiais | metal 41, madeira 30, plástico 23, vegetal 10, tecido 9, borracha 7, concreto 7, palha 4, pedra 4, vidro 4, papelão 3 |
+| Triângulos por prop | 20 a 1.408 (média 214) |
+| Quebráveis | 81, com 2 a 7 pedaços pré-fraturados |
+| Materiais | metal 50, madeira 31, plástico 23, vegetal 14, tecido 9, borracha 7, concreto 7, palha 4, pedra 4, vidro 4, papelão 3 |
 | Texturas | uma por material, 64×64 px, em tons de cinza (a cor vem da cor por vértice) |
 | Escala e eixos | metros, Y para cima, frente em +Z, origem no chão, no centro |
 | Objetos | `Inteiro` (o prop montado) e, nos quebráveis, `Peca_00`, `Peca_01`... |
@@ -27,7 +27,7 @@ https://github.com/user-attachments/assets/b5d738ac-eb3c-40ea-8ed1-9341df787d7e
 
 ## Corrida e beira de estrada
 
-Cones, fardos de feno, pneus, madeiras-guia, placas de curva, balizas de quilometragem, cercas, barreiras, tambores, caixas, paletes, arvoretas, arbustos, toras e pedras: o que fica na beira de um estágio de rali e pode ser atropelado. 75 props.
+Cones, fardos de feno, pneus, madeiras-guia, placas de curva e de advertência, balizas de quilometragem, cercas, cercas vivas, defensas metálicas, sinalização de obra e de passagem de nível, postes de telégrafo, barreiras, tambores, caixas, paletes, arvoretas, arbustos, samambaias, rolos de capim seco, toras e pedras: o que fica na beira de um estágio de rali e pode ser atropelado. 89 props.
 
 | Prévia | Prop | Material | Massa | Quebra | Voa | Triângulos | Onde serve |
 |---|---|---|---|---|---|---|---|
@@ -106,6 +106,20 @@ Cones, fardos de feno, pneus, madeiras-guia, placas de curva, balizas de quilome
 | ![Torre de iluminação, prop low poly de metal](previas/torre_iluminacao.jpg) | **Torre de iluminação**<br>`torre_iluminacao` | metal | 450 kg | não | não | 728 | corrida, parque de apoio |
 | ![Totem de cronometragem, prop low poly de metal](previas/totem_cronometro.jpg) | **Totem de cronometragem**<br>`totem_cronometro` | metal | 18 kg | sim, 2 pedaços (108 N·s) | sim | 160 | corrida, parque de apoio |
 | ![Placa de posto de controle, prop low poly de madeira](previas/placa_ponto_controle.jpg) | **Placa de posto de controle**<br>`placa_ponto_controle` | madeira | 14 kg | sim, 3 pedaços (42 N·s) | sim | 140 | corrida, parque de apoio |
+| ![Defensa metálica, prop low poly de metal](previas/guard_rail.jpg) | **Defensa metálica**<br>`guard_rail` | metal | 600 kg | sim, 3 pedaços (4.200 N·s) | não | 140 | corrida, cidade |
+| ![Ponta de defensa metálica, prop low poly de metal](previas/guard_rail_ponta.jpg) | **Ponta de defensa metálica**<br>`guard_rail_ponta` | metal | 200 kg | sim, 3 pedaços (1.400 N·s) | não | 220 | corrida, cidade |
+| ![Carreta com painel de seta luminosa, prop low poly de metal](previas/painel_seta_luminosa.jpg) | **Carreta com painel de seta luminosa**<br>`painel_seta_luminosa` | metal | 350 kg | sim, 2 pedaços (2.800 N·s) | não | 350 | corrida, cidade, parque de apoio |
+| ![Placa de desvio de obra, prop low poly de metal](previas/placa_obra_desvio.jpg) | **Placa de desvio de obra**<br>`placa_obra_desvio` | metal | 14 kg | sim, 2 pedaços (140 N·s) | sim | 128 | corrida, cidade |
+| ![Cruz de passagem de nível, prop low poly de metal](previas/placa_ferrovia.jpg) | **Cruz de passagem de nível**<br>`placa_ferrovia` | metal | 15 kg | sim, 2 pedaços (150 N·s) | sim | 72 | corrida, cidade |
+| ![Placa de cruzamento com trem, prop low poly de metal](previas/placa_cruzamento_trem.jpg) | **Placa de cruzamento com trem**<br>`placa_cruzamento_trem` | metal | 12 kg | sim, 2 pedaços (120 N·s) | sim | 172 | corrida, cidade |
+| ![Placa de descida íngreme, prop low poly de metal](previas/placa_declive.jpg) | **Placa de descida íngreme**<br>`placa_declive` | metal | 12 kg | sim, 2 pedaços (120 N·s) | sim | 60 | corrida, cidade |
+| ![Placa de pista estreita, prop low poly de metal](previas/placa_estreitamento.jpg) | **Placa de pista estreita**<br>`placa_estreitamento` | metal | 12 kg | sim, 2 pedaços (120 N·s) | sim | 96 | corrida, cidade |
+| ![Placa de pista escorregadia, prop low poly de metal](previas/placa_agua_pista.jpg) | **Placa de pista escorregadia**<br>`placa_agua_pista` | metal | 12 kg | sim, 2 pedaços (120 N·s) | sim | 136 | corrida, cidade |
+| ![Rolo de capim seco, prop low poly de vegetal](previas/rolo_capim_seco.jpg) | **Rolo de capim seco**<br>`rolo_capim_seco` | vegetal | 1,5 kg | não | sim | 356 | corrida |
+| ![Samambaia grande, prop low poly de vegetal](previas/samambaia.jpg) | **Samambaia grande**<br>`samambaia` | vegetal | 5,0 kg | sim, 4 pedaços (15 N·s) | sim | 178 | corrida, cidade, concessionária |
+| ![Touceira de folhas largas, prop low poly de vegetal](previas/touceira_tropical.jpg) | **Touceira de folhas largas**<br>`touceira_tropical` | vegetal | 8,0 kg | sim, 4 pedaços (24 N·s) | sim | 182 | corrida, cidade, concessionária |
+| ![Cerca viva aparada, prop low poly de vegetal](previas/cerca_viva.jpg) | **Cerca viva aparada**<br>`cerca_viva` | vegetal | 60 kg | sim, 3 pedaços (150 N·s) | não | 244 | corrida, cidade |
+| ![Poste de telégrafo, prop low poly de madeira](previas/poste_telegrafo.jpg) | **Poste de telégrafo**<br>`poste_telegrafo` | madeira | 400 kg | não | não | 448 | corrida |
 
 ## Parque de apoio
 
@@ -226,7 +240,7 @@ cena.add(glb.scene);
 
 O catálogo traz o que a física precisa de cada prop:
 
-- `massa` (kg) e `voa` (leve o bastante para sair voando quando um carro bate);
+- `massa` (kg) e `voa` (leve o bastante para sair voando quando um carro bate); `fixo` (só nos fincados no chão, como o poste de telégrafo): corpo fixo, que segura o carro e não se mexe;
 - `colisor`: uma forma simples no espaço do prop, `caixa` (`centro`, `meia` = meias medidas), `cilindro` (`centro`, `raio`, `meiaAltura`) ou `esfera` (`centro`, `raio`);
 - `quebra` e `resistencia`: o impulso, em N·s (kg·m/s), que quebra o prop. Uma regra simples que funciona bem: a cada passo da física, se `massa × variação de velocidade do prop no passo` passar da `resistencia`, o prop quebra;
 - `pedacos`: para cada pedaço, o `centro` no espaço do prop, as meias medidas da caixa (`meia`) e a `massa`. Ao quebrar, remova o corpo do prop inteiro e crie um corpo por pedaço na posição do prop girada (posição do prop + rotação × `centro`), com a velocidade do prop (somada à rotação dele) e um pequeno empurrão para fora do centro. Pedaços leves podem sumir depois de alguns segundos.
